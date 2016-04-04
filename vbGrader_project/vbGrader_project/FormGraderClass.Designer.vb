@@ -30,7 +30,7 @@ Partial Class FormGraderClass
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(781, 333)
         Me.Name = "FormGraderClass"
-        Me.Text = "FormGraderGUIClass"
+        Me.Text = "vbGrader - Project"
         Me.ResumeLayout(False)
 
     End Sub
