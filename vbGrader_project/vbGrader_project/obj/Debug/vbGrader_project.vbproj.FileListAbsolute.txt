@@ -1,2 +1,0 @@
-C:\Users\Kody\AppData\Local\Temporary Projects\vbGrader_project\bin\Debug\vbGrader_project.exe.config
-C:\Users\Kody\Documents\Projects\vbGrader\vbGrader_project\vbGrader_project\bin\Debug\vbGrader_project.exe.config
