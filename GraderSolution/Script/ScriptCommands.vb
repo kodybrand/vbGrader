@@ -357,64 +357,61 @@ Public Class ScriptCommands
     '        Make sure this works after 5/8/14 update
     Public Sub expect(ByVal variable As String, ByVal comparitor As String, ByVal literal As String, ByVal scoreAmount As Single)
 
-        Dim value As String = variable
+      Dim value As String = variable
 
-        If value Is Nothing Then
-            value = testAssembly.getValue(variable)
+      value = testAssembly.getValue(variable)
 
-        End If
+      If comparitor.Trim = "<>" Then
+         If value = literal Then
+            errorList.Add("Error in variable: " & variable & vbCrLf & _
+                           "          Expected: " & literal & vbCrLf & _
+                           "         But Found: " & value & vbCrLf & vbCrLf)
+            totalScore -= scoreAmount
 
-        If comparitor.Trim = "<>" Then
-            If value = literal Then
-                errorList.Add("Error in variable: " & variable & vbCrLf & _
-                               "          Expected: " & literal & vbCrLf & _
-                               "         But Found: " & value & vbCrLf & vbCrLf)
-                totalScore -= scoreAmount
+         End If
 
-            End If
+      ElseIf comparitor.Trim = "=" Then
+         If value <> literal Then
+            errorList.Add("Error in variable: " & variable & vbCrLf & _
+                           "          Expected: " & literal & vbCrLf & _
+                           "         But Found: " & value & vbCrLf & vbCrLf)
+            totalScore -= scoreAmount
 
-        ElseIf comparitor.Trim = "=" Then
-            If value <> literal Then
-                errorList.Add("Error in variable: " & variable & vbCrLf & _
-                               "          Expected: " & literal & vbCrLf & _
-                               "         But Found: " & value & vbCrLf & vbCrLf)
-                totalScore -= scoreAmount
+         End If
 
-            End If
+      ElseIf comparitor.Trim = ">" Then
+         If Integer.Parse(value) <= Integer.Parse(literal) Then
+            errorList.Add("Error in variable: " & variable & vbCrLf & _
+                           "          Expected: > " & literal & vbCrLf & _
+                           "         But Found: " & value & vbCrLf & vbCrLf)
+            totalScore -= scoreAmount
 
-        ElseIf comparitor.Trim = ">" Then
-            If Integer.Parse(value) <= Integer.Parse(literal) Then
-                errorList.Add("Error in variable: " & variable & vbCrLf & _
-                               "          Expected: > " & literal & vbCrLf & _
-                               "         But Found: " & value & vbCrLf & vbCrLf)
-                totalScore -= scoreAmount
+         End If
 
-            End If
+      ElseIf comparitor.Trim = "<" Then
+         If Integer.Parse(value) >= Integer.Parse(literal) Then
+            errorList.Add("Error in variable: " & variable & vbCrLf & _
+                            "          Expected: < " & literal & vbCrLf & _
+                            "         But Found: " & value & vbCrLf & vbCrLf)
+            totalScore -= scoreAmount
 
-        ElseIf comparitor.Trim = "<" Then
-            If Integer.Parse(value) >= Integer.Parse(literal) Then
-                errorList.Add("Error in variable: " & variable & vbCrLf & _
-                                "          Expected: < " & literal & vbCrLf & _
-                                "         But Found: " & value & vbCrLf & vbCrLf)
-                totalScore -= scoreAmount
+         End If
 
-            End If
+      ElseIf comparitor.Trim = "close" Then
+         If value < literal - 5 Or value > literal + 5 Then
+            errorList.Add("Error in variable: " & variable & vbCrLf & _
+                            "          Expected: Within 5 of " & literal & vbCrLf & _
+                            "         But Found: " & value & vbCrLf & vbCrLf)
+            totalScore -= scoreAmount
 
-        ElseIf comparitor.Trim = "close" Then
-            If value < literal - 5 Or value > literal + 5 Then
-                errorList.Add("Error in variable: " & variable & vbCrLf & _
-                                "          Expected: Within 5 of " & literal & vbCrLf & _
-                                "         But Found: " & value & vbCrLf & vbCrLf)
-                totalScore -= scoreAmount
+         End If
 
-            End If
+      End If
 
-        End If
+      Console.WriteLine(totalTests & " " & "EXPECT" & " +++++++ Got: " & value & " ----- wanted: " & comparitor & " " & literal)
+      totalTests += 1
 
-        Console.WriteLine(totalTests & " " & "EXPECT" & " +++++++ Got: " & value & " ----- wanted: " & comparitor & " " & literal)
-        totalTests += 1
-
-    End Sub
+   End Sub
 
     'Finds the specified component given the x and y coordinates. The x and y coordinate system works like this:
     'controls of the same type are given x and y values based on their position on the screen. The farther to the

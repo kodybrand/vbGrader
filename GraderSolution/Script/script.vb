@@ -253,9 +253,6 @@ Public Class Script
                 currentForm = args(1)
                 loadedProperty = args(1)
 
-                'Case "getdatagridcell"
-                '    scriptCommander.getDataGridCell(args(1), args(2), args(3))
-
             Case "loaddatabase"
                 scriptCommander.loadDatabase(args(1), args(2))
 

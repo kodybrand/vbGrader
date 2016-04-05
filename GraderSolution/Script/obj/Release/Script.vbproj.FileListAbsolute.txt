@@ -70,3 +70,15 @@ K:\Courses\CSSE\yangq\cs3340\1CourseMaterials\VBGrader\GraderSolution\Script\obj
 K:\Courses\CSSE\yangq\cs3340\1CourseMaterials\VBGrader\GraderSolution\Script\obj\Release\Script.dll
 K:\Courses\CSSE\yangq\cs3340\1CourseMaterials\VBGrader\GraderSolution\Script\obj\Release\Script.xml
 K:\Courses\CSSE\yangq\cs3340\1CourseMaterials\VBGrader\GraderSolution\Script\obj\Release\Script.pdb
+C:\Users\brandk\Documents\Projects\vbgrader\GraderSolution\Script\bin\Release\Script.dll
+C:\Users\brandk\Documents\Projects\vbgrader\GraderSolution\Script\bin\Release\Script.pdb
+C:\Users\brandk\Documents\Projects\vbgrader\GraderSolution\Script\bin\Release\Script.xml
+C:\Users\brandk\Documents\Projects\vbgrader\GraderSolution\Script\bin\Release\VBGrader.dll
+C:\Users\brandk\Documents\Projects\vbgrader\GraderSolution\Script\bin\Release\VBGrader.pdb
+C:\Users\brandk\Documents\Projects\vbgrader\GraderSolution\Script\bin\Release\VBGrader.xml
+C:\Users\brandk\Documents\Projects\vbgrader\GraderSolution\Script\obj\Release\Script.vbprojResolveAssemblyReference.cache
+C:\Users\brandk\Documents\Projects\vbgrader\GraderSolution\Script\obj\Release\Script.Resources.resources
+C:\Users\brandk\Documents\Projects\vbgrader\GraderSolution\Script\obj\Release\Script.vbproj.GenerateResource.Cache
+C:\Users\brandk\Documents\Projects\vbgrader\GraderSolution\Script\obj\Release\Script.dll
+C:\Users\brandk\Documents\Projects\vbgrader\GraderSolution\Script\obj\Release\Script.xml
+C:\Users\brandk\Documents\Projects\vbgrader\GraderSolution\Script\obj\Release\Script.pdb

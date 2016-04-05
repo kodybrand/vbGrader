@@ -1,8 +1,8 @@
 ---------- 10 Points out of 10 Points ---------
----------- 3 Errors out of 0 Tests ----------
+---------- 1 Errors out of 8 Tests ----------
 
-Grader execution was stopped
+Error in Component: txtName btnHello
+                 Property: Aligned Center
+               Expected: txtName Center = 295
+              But Found: btnHello Center = 295.5
 
-Could not find form: frmMain
-
-Fix problem and resubmit solution

@@ -46,3 +46,11 @@ K:\Courses\CSSE\yangq\cs3340\1CourseMaterials\VBGrader\GraderSolution\VBGraderPr
 K:\Courses\CSSE\yangq\cs3340\1CourseMaterials\VBGrader\GraderSolution\VBGraderProject\obj\x86\Release\VBGrader.dll
 K:\Courses\CSSE\yangq\cs3340\1CourseMaterials\VBGrader\GraderSolution\VBGraderProject\obj\x86\Release\VBGrader.xml
 K:\Courses\CSSE\yangq\cs3340\1CourseMaterials\VBGrader\GraderSolution\VBGraderProject\obj\x86\Release\VBGrader.pdb
+C:\Users\brandk\Documents\Projects\vbgrader\GraderSolution\VBGraderProject\bin\Release\VBGrader.dll
+C:\Users\brandk\Documents\Projects\vbgrader\GraderSolution\VBGraderProject\bin\Release\VBGrader.pdb
+C:\Users\brandk\Documents\Projects\vbgrader\GraderSolution\VBGraderProject\bin\Release\VBGrader.xml
+C:\Users\brandk\Documents\Projects\vbgrader\GraderSolution\VBGraderProject\obj\x86\Release\UWPCS3340.Resources.resources
+C:\Users\brandk\Documents\Projects\vbgrader\GraderSolution\VBGraderProject\obj\x86\Release\ProgramAssemblyTools.vbproj.GenerateResource.Cache
+C:\Users\brandk\Documents\Projects\vbgrader\GraderSolution\VBGraderProject\obj\x86\Release\VBGrader.dll
+C:\Users\brandk\Documents\Projects\vbgrader\GraderSolution\VBGraderProject\obj\x86\Release\VBGrader.xml
+C:\Users\brandk\Documents\Projects\vbgrader\GraderSolution\VBGraderProject\obj\x86\Release\VBGrader.pdb
