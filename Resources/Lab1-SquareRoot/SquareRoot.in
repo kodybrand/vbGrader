@@ -2,8 +2,8 @@
 TotalPoints 10
 
 ' Checks the content of the form
-Form frmMain
-	Text "Lab1 (firstname lastname)" 0.5
+Form frmLab1
+'	Text "Lab1 (firstname lastname)" 0.5
 	Height 292 0.5
 	Width 500 0.5
 	FormBorderStyle Fixed3D 0.5

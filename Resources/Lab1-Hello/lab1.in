@@ -6,7 +6,7 @@ CheckName
    Label lblName
    Form frmLab1
    
-   
+
 ' Checks the content of the form
 Form frmMain
 '	Text "Lab1 (firstname lastname)" 0.5
@@ -28,13 +28,13 @@ Find TextBox txtName
 Find Label lblName 
 	Name lblName 0.5
 	AutoSize True 0.5
-	Text "Enter Your Name." 0.5
+	Text "Enter Your Name" 0.5
 	Centered Horizontal 0.5
 	
 ' Checks btnHello Properties
 Find Button btnHello 
 	Name btnHello 0.5
-	Text "Hello." 0.5
+	Text "Hello" 0.5
 	Centered Horizontal 0.5
 
 ' Checks if lblName and txtName are left aligned
