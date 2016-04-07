@@ -112,8 +112,8 @@ Public Class ScriptCommands
             End If
 
         Else
-            Dim ctrl1X = testAssembly.GetProperty(ctrl1, "Left")
-            Dim ctrl2X = testAssembly.GetProperty(ctrl2, "Left")
+         Dim ctrl1X = testAssembly.GetProperty(ctrl1, "Center")
+         Dim ctrl2X = testAssembly.GetProperty(ctrl2, "Center")
             Dim ctrl1Width = testAssembly.GetProperty(ctrl1, "Width")
             Dim ctrl2Width = testAssembly.GetProperty(ctrl2, "Width")
 
@@ -150,9 +150,9 @@ Public Class ScriptCommands
         Dim componentSize = 0
 
         If center.ToLower.Contains("horizontal") Then
-            formCenter = testAssembly.GetProperty(formName, "Width")
+         formCenter = testAssembly.GetProperty(formName, "Width")
             componentCenter = testAssembly.GetProperty(controlName, "Left")
-            componentSize = testAssembly.GetProperty(controlName, "Width") + 10
+         componentSize = testAssembly.GetProperty(controlName, "Width") + 10
 
         ElseIf center.ToLower.Contains("vertical") Then
             formCenter = testAssembly.GetProperty(formName, "Height")
@@ -166,16 +166,16 @@ Public Class ScriptCommands
 
         Console.WriteLine(totalTests & " " & controlName & " +++++++ Got: " & componentCenter & " ----- wanted: " & formCenter - 1 & "-" & formCenter + 1)
 
-        If Not (componentCenter - 2 <= formCenter And componentCenter + 2 >= formCenter) Then
-            Dim tempString As String = "Error in Component: " & controlName & vbCrLf _
-                           & "                 Property: " & center & vbCrLf _
-                           & "               Expected: " & formCenter & vbCrLf _
-                           & "              But Found: " & componentCenter & vbCrLf & vbCrLf
+      If Not (componentCenter - 5 <= formCenter And componentCenter + 5 >= formCenter) Then
+         Dim tempString As String = "Error in Component: " & controlName & vbCrLf _
+                        & "                 Property: " & center & vbCrLf _
+                        & "               Expected: " & formCenter & vbCrLf _
+                        & "              But Found: " & componentCenter & vbCrLf & vbCrLf
 
-            errorList.Add(tempString)
-            totalScore -= scoreAmount
+         errorList.Add(tempString)
+         totalScore -= scoreAmount
 
-        End If
+      End If
 
         totalTests += 1
 
