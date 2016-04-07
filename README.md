@@ -6,5 +6,5 @@
 * Chase Knapp
 * Alexander Mueller
 
-#### Assignments
-* TBD
+#### Important Dates
+* 04/12/2016 - Demo program to Qi
