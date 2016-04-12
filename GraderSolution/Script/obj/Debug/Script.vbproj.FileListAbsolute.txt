@@ -22,3 +22,15 @@ G:\Workplace\VBGrader\GraderSolution\Script\obj\Debug\Script.vbproj.GenerateReso
 G:\Workplace\VBGrader\GraderSolution\Script\obj\Debug\Script.dll
 G:\Workplace\VBGrader\GraderSolution\Script\obj\Debug\Script.xml
 G:\Workplace\VBGrader\GraderSolution\Script\obj\Debug\Script.pdb
+K:\Courses\CSSE\yangq\cs3340\GroupKody\vbGrader-master\vbGrader-master\GraderSolution\Script\bin\Debug\Script.dll
+K:\Courses\CSSE\yangq\cs3340\GroupKody\vbGrader-master\vbGrader-master\GraderSolution\Script\bin\Debug\Script.pdb
+K:\Courses\CSSE\yangq\cs3340\GroupKody\vbGrader-master\vbGrader-master\GraderSolution\Script\bin\Debug\Script.xml
+K:\Courses\CSSE\yangq\cs3340\GroupKody\vbGrader-master\vbGrader-master\GraderSolution\Script\bin\Debug\VBGrader.dll
+K:\Courses\CSSE\yangq\cs3340\GroupKody\vbGrader-master\vbGrader-master\GraderSolution\Script\bin\Debug\VBGrader.pdb
+K:\Courses\CSSE\yangq\cs3340\GroupKody\vbGrader-master\vbGrader-master\GraderSolution\Script\bin\Debug\VBGrader.xml
+K:\Courses\CSSE\yangq\cs3340\GroupKody\vbGrader-master\vbGrader-master\GraderSolution\Script\obj\Debug\Script.vbprojResolveAssemblyReference.cache
+K:\Courses\CSSE\yangq\cs3340\GroupKody\vbGrader-master\vbGrader-master\GraderSolution\Script\obj\Debug\Script.Resources.resources
+K:\Courses\CSSE\yangq\cs3340\GroupKody\vbGrader-master\vbGrader-master\GraderSolution\Script\obj\Debug\Script.vbproj.GenerateResource.Cache
+K:\Courses\CSSE\yangq\cs3340\GroupKody\vbGrader-master\vbGrader-master\GraderSolution\Script\obj\Debug\Script.dll
+K:\Courses\CSSE\yangq\cs3340\GroupKody\vbGrader-master\vbGrader-master\GraderSolution\Script\obj\Debug\Script.xml
+K:\Courses\CSSE\yangq\cs3340\GroupKody\vbGrader-master\vbGrader-master\GraderSolution\Script\obj\Debug\Script.pdb

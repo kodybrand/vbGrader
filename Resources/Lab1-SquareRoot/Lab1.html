@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>CS 2340: Programming in Visual Basic </title>
+</head>
+
+<body>
+<center><h3>         CS2340 - Lab 1 (10 points)
+<br />
+Due 5 PM, Wednesday, September 7, 2016
+</h3></center>
+
+<p>
+Create a VB.NET program in MS Visual Studio 2012. The program has one form with two textboxes, two labels, and two buttons.
+</p>
+
+<h5> The Form </h5>
+<ul>
+<li> The name is frmLab1. </li>
+<li> The title is "Lab1" followed by your name, e.g., "Lab1 - Qi Yang" </li>
+<li> The size of the form is (500, 300), the FormBorderStyle is Fixed3D. </li>
+<li> The WindowState is Normal and the StartPosition is CenterScreen. </li>
+</ul>
+
+<h5> The Textboxes </h5>
+<ul>
+<li> The name is txtInput and txtSquareRoot. </li>
+<li> The two textboxes together are centered on the form both vertically and horizontally. </li>
+<li> The size of both textboxes is (100, 20). </li>
+<li> The space between the two textboxes is between 50 and 100. </li>
+<li> Textbox txtSquareRoot is ReadOnly, Backcolor is Window, and TextAlign is right.</li>
+</ul>
+
+<h5> The Labels </h5>
+<ul>
+<li> The name is lblInput and lblSquareRoot. </li>
+<li> The text is "Input" and "Square Root" respectively. </li>
+<li> Each label is above a textbox and aligned on the left. </li>
+</ul>
+
+<h5> The Buttons </h5>
+<ul>
+<li> The name is btnCompute and btnExit. </li>
+<li> The text is "<u>C</u>ompute" and "E<u>x</u>it" respectively, and the two underlined chars are the access key.  </li>
+<li> They are below the textboxes and horizontally centered. </li>
+<li> No space between the two buttons. </li>
+<li> Button btnCompute is the AccessButton of the frmLab1 and button btnExit is the CancelButton of frmLab1. </li>
+</ul>
+
+<h5> The Click Event of the buttons</h5>
+<ul>
+<li> When clicking on btnCompute
+<ul>
+    <li> a message box will be displayed if the input string does not represent a number, including "2e3" and "2E3":
+    <ul>
+    <li> title: "Lab 1" </li>
+    <li> text "Incorrect Input!" and "Enter Again!" on two lines </li>
+    <li> icon: Exclamation </li>
+    <li> button: OK </li>
+    <li> The focus will go to txtInput after clicking OK of the message box. </li>
+    </ul> </li>
+
+    <li> a message box will be displayed if the input string represents a negative number:
+    <ul>
+    <li> title: "Lab 1" </li>
+    <li> text "Negative Input!" and "Enter Again!" on two lines </li>
+    <li> icon: Exclamation </li>
+    <li> button: OK </li>
+    <li> The focus will go to txtInput after clicking OK of the message box. </li>
+    </ul> </li>
+    
+    <li> otherwise, the square root of the input number will be displayed in txtSquareRoot with two decimal digits. </li>
+</ul>
+    
+<li> Clicking on btnExit will terminate the program. </li>
+</ul>
+
+<h5> Submission </h5>
+<ul>
+<li> Drop your executable file to folder Lab1 in the class DropBox, 
+     S:\Courses\CSSE\YangQ\CS234\DropBox </li>
+<li> The due time is 9 PM, Wednesday, September 8 2010. No grace time!</li>
+<li> The name of the executable file <b>must be UserName_Lab1.exe</b>, where UserName is your UWP UserName.
+     For example, YangQ_Lab1.exe. </li>
+<li> Make sure the file name is correct. You will <b>lose two points</b> for incorrect file name. </li>
+</ul>
+</body>
+</html>

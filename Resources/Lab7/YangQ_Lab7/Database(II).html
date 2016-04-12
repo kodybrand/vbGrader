@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head>
+      <title>CS2340: Programming in Visual Basic </title>
+</head>
+
+<body>
+
+<center><h4>
+            CS2340 - Database (II)
+    </h4>
+</center>
+
+
+<!--
+<h4> ListBox </h4>
+<ul>
+<li>Sorting </li>
+<li>Double click </li>
+</ul>
+-->
+
+<h4> Handling Exceptions </h4>
+<pre>
+   Database file may not be there or the file name has been changed.
+   .NET will handle it. But handle it within our program.
+
+    Private Sub Form2_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+      Try
+         'TODO: This line of code loads data into the 'DsMyCompany.SalesStaff' table. 
+         '      You can move, or remove it, as needed.
+         Me.SalesStaffTableAdapter.Fill(Me.DsMyCompany.SalesStaff)
+      Catch ex As Exception
+         MsgBox(ex.Message & vbCrLf & "The program will be terminated!", MsgBoxStyle.Critical)
+         Application.Exit()
+      End Try
+   End Sub
+</pre>
+
+<h4> Update Database </h4>
+<pre>
+   Handle exceptions: the new data may be invalid.
+   Display a message box and continue to run.
+
+   Private Sub ToolStripButton7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) _
+           Handles btnSave.Click
+      Try
+         Me.Validate()
+         Me.SalesStaffBindingSource.EndEdit()
+         Me.SalesStaffTableAdapter.Update(Me.DsMyCompany.SalesStaff)
+      Catch ex As Exception
+         MsgBox(ex.Message)
+      End Try
+   End Sub
+</pre>
+
+<h4> Bindging individual controls to database columns </h4>
+<ul>
+<li> <b>Form Design view (not code view)</b> </li>
+<li> Show Data Source </li>
+<li> Dataset </li>
+<li> Datatable </li>
+<li> Data columns </li>
+<li> Selecting control: DropDown List 
+    <ul>
+    <li> Textbox </li>
+    <li> ComboBox </li>
+    <li> Label </li>
+    <li> ListBox </li>
+    <li> LinkLabel </li>
+    <li> DateTimePicker </li>
+    <li> ... </li>
+    </ul>
+</li>
+<li> Drag and Drop </li>
+</ul>
+
+<h4> Option Details for a Datatable </h4>
+<ul>
+<li> Binding all columns to individual controls </li>
+<li> Show Data Source </li>
+<li> Dataset </li>
+<li> Datatable </li>
+<li> Details </li>
+<li> Drag and Drop </li>
+</ul>
+
+<h4> ToolStrip Control for Navigator </h4>
+<ul>
+   <li> <b>Lab7: Create your own toolstrip </b></li>
+    <li> ToolStripButton </li>
+    <li> ToolStripTextBox </li>
+    <li> ToolStripLabel </li>
+    <li> ToolStripSeparator </li>
+    <li> ... </li>
+</ul>
+
+
+<h4> BindingSource </h4>
+<ul>
+    <li> One object of BindingSource is created by .NET when Dragging and Dropping </li>
+    <li> Methods: MoveFirst, MovePrevious, MoveNext, MoveLast, AddNew, RemoveCurrent, EndEdit... </li>
+    <li> Properties: Position, Count... </li>
+    <li> Binding source: (database name, location, username, password and other connection information.)
+        <br /> Binding controls to a dataset, a table of a dataset, or a column of a datatable. </li>
+    <li> Setting the BindingSource property of the ToolStrip to SalesStaffBindingSource </li>
+</ul>
+
+<h4> Navigation </h4>
+<ul>
+<li> Call methods MoveFirst, MovePrevious, MoveNext, MoveLast of SalesStaffBindingSource </li>
+<li> Enable / Disable ToolStripButtons: Position </li>
+<li> Display Current position and total number of records:  Position, Count </li>
+<li> ReadOnly: Position and Count </li>
+</ul>
+
+<h4> Updating Records </h4>
+<pre>
+      Try
+         Me.Validate()
+         Me.SalesStaffBindingSource.EndEdit()
+         Me.SalesStaffTableAdapter.Update(Me.DsMyCompany.SalesStaff)
+
+         ShowRecordCount()
+         EnableButtons()
+
+      Catch ex As Exception
+         MsgBox(ex.Message)
+      End Try
+</pre>
+
+<h4> Deleting Records </h4>
+<ul>
+<li> Call RemoveCurrent </li>
+<li> Update count and position display</li>
+<li> Save back to database </li>
+</ul>
+
+<h4> Adding Records </h4>
+<ul>
+<li> Call AddNew 
+<br /> This will create a new empty record
+</li>
+<li> Disable all buttons except Save and Delete </li>
+<li> Update count and position display</li>
+<li> Save back to database or delete it </li>
+<li> Enable all buttons </li>
+</ul>
+
+<h4> Disable and Enable buttons </h4>
+<ul>
+<li> Navigation buttons
+     <br /> Use procedure UpdateButtons 
+</li>
+
+<li> New Record on Navigator
+   <ul>
+   <li> SalesStaffBindingNavigator.MovePreviousItem = Nothing </li>
+   <li> BindingNavigatorMovePreviousItem.Enabled = False </li>
+   </ul>
+</li>
+</ul>
+
+
+</body>
+</html>

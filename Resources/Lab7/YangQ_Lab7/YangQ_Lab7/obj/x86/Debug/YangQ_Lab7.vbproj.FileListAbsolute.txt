@@ -1,0 +1,62 @@
+C:\Users\yangq\AppData\Local\Temporary Projects\YangQ_Lab7\bin\Debug\YangQ_Lab7.exe.config
+C:\Users\yangq\AppData\Local\Temporary Projects\YangQ_Lab7\bin\Debug\YangQ_Lab7.exe
+C:\Users\yangq\AppData\Local\Temporary Projects\YangQ_Lab7\bin\Debug\YangQ_Lab7.pdb
+C:\Users\yangq\AppData\Local\Temporary Projects\YangQ_Lab7\bin\Debug\YangQ_Lab7.xml
+C:\Users\yangq\AppData\Local\Temporary Projects\YangQ_Lab7\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\yangq\AppData\Local\Temporary Projects\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.Form1.resources
+C:\Users\yangq\AppData\Local\Temporary Projects\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.Resources.resources
+C:\Users\yangq\AppData\Local\Temporary Projects\YangQ_Lab7\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\yangq\AppData\Local\Temporary Projects\YangQ_Lab7\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\yangq\AppData\Local\Temporary Projects\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.exe
+C:\Users\yangq\AppData\Local\Temporary Projects\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.xml
+C:\Users\yangq\AppData\Local\Temporary Projects\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.pdb
+J:\CS234\YangQ_Lab7\YangQ_Lab7\bin\Debug\YangQ_Lab7.exe.config
+J:\CS234\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.exe
+J:\CS234\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.xml
+J:\CS234\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.pdb
+J:\CS234\YangQ_Lab7\YangQ_Lab7\bin\Debug\YangQ_Lab7.exe
+J:\CS234\YangQ_Lab7\YangQ_Lab7\bin\Debug\YangQ_Lab7.pdb
+J:\CS234\YangQ_Lab7\YangQ_Lab7\bin\Debug\YangQ_Lab7.xml
+J:\CS234\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\ResolveAssemblyReference.cache
+J:\CS234\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.Form1.resources
+J:\CS234\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.Form2.resources
+J:\CS234\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.Resources.resources
+J:\CS234\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\GenerateResource.read.1.tlog
+J:\CS234\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\YangQ_Lab7\YangQ_Lab7\bin\Debug\YangQ_Lab7.exe.config
+C:\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.exe
+C:\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.xml
+C:\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.pdb
+C:\YangQ_Lab7\YangQ_Lab7\bin\Debug\YangQ_Lab7.exe
+C:\YangQ_Lab7\YangQ_Lab7\bin\Debug\YangQ_Lab7.pdb
+C:\YangQ_Lab7\YangQ_Lab7\bin\Debug\YangQ_Lab7.xml
+C:\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.Resources.resources
+C:\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.FormClassGrid.resources
+C:\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.FormClassIndividual.resources
+J:\CS234\Labs\YangQ_Lab7\YangQ_Lab7\bin\Debug\YangQ_Lab7.exe.config
+J:\CS234\Labs\YangQ_Lab7\YangQ_Lab7\bin\Debug\YangQ_Lab7.exe
+J:\CS234\Labs\YangQ_Lab7\YangQ_Lab7\bin\Debug\YangQ_Lab7.pdb
+J:\CS234\Labs\YangQ_Lab7\YangQ_Lab7\bin\Debug\YangQ_Lab7.xml
+J:\CS234\Labs\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\ResolveAssemblyReference.cache
+J:\CS234\Labs\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.FormClassGrid.resources
+J:\CS234\Labs\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.FormClassIndividual.resources
+J:\CS234\Labs\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.Resources.resources
+J:\CS234\Labs\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\GenerateResource.read.1.tlog
+J:\CS234\Labs\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\GenerateResource.write.1.tlog
+J:\CS234\Labs\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.exe
+J:\CS234\Labs\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.xml
+J:\CS234\Labs\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.pdb
+J:\courses\CS234\Labs\YangQ_Lab7\YangQ_Lab7\bin\Debug\YangQ_Lab7.exe.config
+J:\courses\CS234\Labs\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.exe
+J:\courses\CS234\Labs\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.xml
+J:\courses\CS234\Labs\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.pdb
+J:\courses\CS234\Labs\YangQ_Lab7\YangQ_Lab7\bin\Debug\YangQ_Lab7.exe
+J:\courses\CS234\Labs\YangQ_Lab7\YangQ_Lab7\bin\Debug\YangQ_Lab7.pdb
+J:\courses\CS234\Labs\YangQ_Lab7\YangQ_Lab7\bin\Debug\YangQ_Lab7.xml
+J:\courses\CS234\Labs\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.FormClassGrid.resources
+J:\courses\CS234\Labs\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.FormClassIndividual.resources
+J:\courses\CS234\Labs\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.Resources.resources
+J:\courses\CS234\Labs\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.vbproj.GenerateResource.Cache

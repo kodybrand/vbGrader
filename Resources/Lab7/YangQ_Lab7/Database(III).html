@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head>
+      <title>CS2340: Programming in Visual Basic </title>
+</head>
+
+<body>
+
+<center><h4>
+            CS2340 - Database (III)
+    </h4>
+</center>
+
+<h4> Test 5 </h4>
+<ul>
+<li> Friday </li>
+<li> Based on Lab 7 and this Note</li>
+</ul>
+
+<h4> Creating Data Source </h4>
+
+<h4> DataGridView </h4>
+<p> Drag and Drop </p>
+
+<h4> Details View </h4>
+<p> Drag and Drop </p>
+
+<h4> Format Fields </h4>
+<ul>
+    <li>DataGridView
+    <br /> Smart Tag: Format Columns
+    </li>
+
+    <li>Details view
+    <br /> Selecting the control
+    <br /> Property Window
+    <br /> DataBindings
+    <br /> Advanced
+    </li>
+</ul>
+
+
+<h4> TableAdapter Methods </h4>
+<ul>
+<li> Update 
+<pre>
+     Me.Validate()
+     Me.SalesStaffBindingSource.EndEdit()
+     Me.SalesStaffTableAdapter.Update(Me.DsMyCompany.SalesStaff)
+</pre>
+</li>
+<li> Fill
+<pre>
+     Me.SalesStaffTableAdapter.Fill(Me.DsMyCompany.SalesStaff)
+</pre>
+</li>
+</ul>
+
+<h4> Enable/Disable Buttons on Navigator </h4>
+<pre>
+     SalesStaffBindingNavigator.MovePreviousItem = Nothing 
+     BindingNavigatorMovePreviousItem.Enabled = False 
+
+
+     SalesStaffBindingNavigator.MovePreviousItem = BindingNavigatorMovePreviousItem
+     BindingNavigatorMovePreviousItem.Enabled = True
+</pre>
+
+
+
+<h4> Binding a column to a Listbox </h4>
+<ul>
+<li> Smart Tag </li>
+<li> Use Data Bound Items and Unbound Mode </li>
+<li> DataSource </li>
+<li> Display member: The field of all records are displayed in the listbox, e.g. FirstName </li>
+<li> Value Member: The field value of the selected record will be the SelectedValue of the listbox, e.g. Salary </li>
+<li> Select member: Blank </li>
+</ul>
+
+<h4> LinkLabel </h4>
+<ul>
+<li> The Windows Forms LinkLabel control allows you to create Web-style links on your form. </li>
+<li> Properties 
+    <ul>
+    <li> LinkArea </li>
+    <li> LinkVisited </li>
+    <li> Colors </li>
+    <li> LinkBehavior </li>
+    <li> DataBinding </li>
+    <li> ... </li>
+    </ul>
+</li>
+<li> Events 
+    <ul>
+    <li> LinkClick </li>
+    <li> ... </li>
+    </ul>
+</li>
+</ul>
+
+<pre>
+   Private Sub FirstNameLinkLabel_LinkClicked( ... ) _
+            Handles FirstNameLinkLabel.LinkClicked
+      Try
+         ' Change the color of the link text by setting LinkVisited to True.
+         FirstNameLinkLabel.LinkVisited = True
+         
+         If FirstNameLinkLabel.Text = "Qi" Then
+            ' Call the Process.Start method to open the default browser with a URL:
+            System.Diagnostics.Process.Start("http://www.uwplatt.edu/~yangq")
+         Else
+            System.Diagnostics.Process.Start("http://www.uwplatt.edu/csse")
+         End If
+      Catch ex As Exception
+         'MsgBox(ex.Message)
+      End Try
+   End Sub
+</pre>
+
+
+<h4> Binding Individual Controls to a Database Field</h4>
+<ul>
+<li> Set up Data Source </li>
+<li> Select a control  </li>
+<li> Databingins at the top of the Properties Window </li>
+<li> (Advanced) 
+    <ul>
+    <li> Property:
+    <ul>
+      <li> Common: Tag, Text </li>
+      <li> All </li>
+    </ul>
+     </li>
+    <li> Binding: </li>
+    <li> Format type: </li>
+    <li> Data Source Update Mode: </li>
+    </ul>
+</li>
+</ul>
+
+</body>
+</html>

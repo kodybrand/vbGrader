@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head>
+      <title>CS2340: Programming in Visual Basic </title>
+</head>
+
+<body>
+
+<center><h4>
+            CS2340 - Database and DataGridView
+    </h4>
+</center>
+
+
+<h4> Relational Database </h4>
+<ul>
+<li> Oracle </li>
+<li> MS SQL Server </li>
+<li> MS Access </li>
+</ul>
+
+<h4> MS Access Database file MyCompany.mdb </h4>
+<ul>
+<li> S:\Courses\CSSE\yangq\CS2340\ReadOnly\DataBase </li>
+<li> Copt to C:\Temp </li>
+<li> Tables </li>
+<li> Rows (records) </li>
+<li> Columns (fields) </li>
+<li> Data types </li>
+<li> Data view and Design view </li>
+</ul>
+
+
+<h4> Data Source </h4>
+<ul>
+<li> Usuall a database, but could be text file, Excel sheet, XML data or others. </li>
+<li> Dataset: in-memory copy of data; program can update data in datasets, but have to save it back to database. </li>
+<li> DataTable: The DataTable is a central object in the ADO.NET library. Other objects that use the DataTable include the DataSet and the DataView. </li>
+<li> Table adapter: pulls data from tables and passes it to your program, and updates the database. </li>
+<li> Binding source: (database name, location, username, password and other connection information.)
+    <br /> Binding controls to a dataset, a table of a dataset, or a column of a datatable.
+</li>
+<li> Adding data source: 
+    <ul>
+    <li> Data Menu </li>
+    <li> Add New Data Source </li>
+    <li> Data Source Configuration Wizard </li>
+    <li> Choose a Data Source Type: Where will the application get data from?
+         <br /> Database </li>
+    <li> Choose a Database Model: Dataset </li>
+    <li> Choose Your Data Connection: 
+      <ul>
+      <li> Which data connection should your application use to connect to the database? </li>
+      <li> New Connection </li>
+      <li> Connection string </li>
+      </ul>
+      </li>
+    <li> Choose Data Source </li>
+    <li> Miscrosoft Access Database File </li>
+    <li> Data Provider: .NET Framework Data Provider for OLE DB </li>
+    <li> Always use this selection: check or uncheck </li>
+    <li> Continue </li>
+    <li> Selecting the database file </li>
+    <li> User name and Password: blank </li>
+    <li> Test Connection </li>
+    <li> OK </li>
+    <li> Which data connection should your application use to connect to the database? </li>
+    <li> Connection string </li>
+    <li> Next </li>
+    <li> Make a copy to the project: <b>NO</b> </li>
+    <li> Save the connection string to the application config file: Yes </li>
+    <li> Database object: Tables </li>
+    <li> Dataset name: MyCompanyDataSet </li>
+    <li> Finish </li>
+    </ul>
+</li>
+</ul>
+
+<h4> Server Explorer </h4>
+<ul>
+<li> View Menu </li>
+<li> Server Exploreer </li>
+<li> Data Connections </li>
+<li> MyCompany.mdb </li>
+<li> Tables </li>
+<li> SalesStaff </li>
+<li> Fields: ID, LastName, FirstName, FullTime, HiredDate, Salary </li>
+<li> Right click on SalesStaff </li>
+<li> Popup menu: Retrieve Data </li>
+<li> Modify, add and delete records </li>
+</ul>
+
+<h4> Solution Explorer </h4>
+<ul>
+<li> New Dataset file: MyCompanyDataSet.xsd </li>
+<li> Show All Files</li>
+<li> MyCompanyDataSet.Designer.vb: <b>DO NOT modify it!</b></li>
+</ul>
+
+<h4> ToolBox </h4>
+<ul>
+<li> Build / Build Solution </li>
+<li> ToolBox </li>
+<li> Lab7 Components </li>
+<li> MyCompanyDataSet </li>
+<li> SalesStaffTableAdapter </li>
+<li> TableAdapterManager </li>
+</ul>
+
+
+<h4> DataGridView </h4>
+<ul>
+<li> Toolbox: Data tab </li>
+<li> Double click to put a DataGridView control on the form </li>
+<li> Smart tag on the DataGridView </li>
+<li> Choose data source 
+   <ul>
+<li> Other data source </li>
+<li> Project Data Sources </li>
+<li> MyCompanyDataSet </li>
+<li> SalesStaff </li>
+   </ul>
+</li>
+<li> Edit Columns 
+   <ul>
+   <li> Header Text </li>   
+   <li> ToolTip Text</li>
+   <li> Visible </li>
+   <li> ReadOnly </li>
+   <li> Resizable </li>
+   <li> SortMode</li>
+   <li> Width </li>
+   <li> MinimumWidth </li>
+   <li> DefaultCellStyle
+      <ul>
+      <li> Format 
+         <ul>
+         <li> Numeric </li>
+         <li> Currency </li>
+         <li> Date Time </li>
+         <li> Scientific </li>
+         <li> Custom </li>
+         </ul>
+      </li>
+      <li> Alignment </li>
+      <li> Font </li>
+      <li> BackColor </li>
+      <li> ForeColor </li>
+      </ul>
+   </li>
+   </ul>
+
+</li>
+<li> Run program and see records </li>
+<li> Enable adding, editing, deleting, column reordering </li>
+</ul>
+
+
+<h4> Form Design Tray </h4>
+<ul>
+<li> MyCompanyDataSet </li>
+<li> SalesStaffBindingSource </li>
+<li> SalesStaffTableAdapter </li>
+</ul>
+
+
+<h4> Form1 Code </h4>
+<pre>
+    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'DsMyCompany.SalesStaff' table. 
+        '      You can move, or remove it, as needed.
+        Me.SalesStaffTableAdapter.Fill(Me.MyCompanyDataSet.SalesStaff)
+
+    End Sub
+</pre>
+
+<h4> Modifying Records  </h4>
+<ul>
+<li> Cannot save updates to database. </li>
+<li> Dataset is modified. </li>
+</ul>
+
+<!--
+Not working in .NET 2010
+<h4> DataGridView with Navigator </h4>
+<ul>
+<li> <b>New form</b> </li>
+<li> Data Menu </li>
+<li> Show Data Source </li>
+<li> Drag the table to the form </li>
+<li> Four objects in the Form Design Tray 
+    <ul>
+    <li> dsMyCompany </li>
+    <li> SalesStaffBindingSource </li>
+    <li> SalesStaffTableAdapter </li>
+    <li> SalesStaffBindingNavigator </li>
+    </ul>
+</li>
+</ul>
+-->
+
+<h4> DataGridView with BiningNavigator </h4>
+<ul>
+<li> ToolBox </li>
+<li> Data </li>
+<li> BiningNavigator </li>
+</ul>
+
+<h4> BiningNavigator Properties </h4>
+<ul>
+<li> BiningSource </li>
+<li> AddNewItem </li>
+<li> DeleteItem </li>
+<li> CountItem </li>
+<li> PositionItem </li>
+<li> MoveFirstItem </li>
+<li> MoveLastItem </li>
+<li> MoveNextItem </li>
+<li> MovePreviousItem </li>
+<li> . . . </li>
+</ul>
+
+<h4> Adding Save Button to BiningNavigator </h4>
+<ul>
+<li> Clicking the BiningNavigator after the last button (DeleteItem) </li>
+<li> Selecting button to add a ToolStripButton </li>
+<li> Selecting the ToolStripButton and Setting Properties 
+   <ul>
+   <li> DisplayStyle </li>
+   <li> Image </li>
+   <li> . . . </li>
+   </ul>
+</li>
+</ul>
+
+<p>
+It may NOT have the SAVE button!
+</p>
+
+<!--
+<h4> Edit Column </h4>
+<ul>
+<li> Width </li>
+<li> Header Text </li>
+<li> ToolTipText </li>
+<li> DefaultCellStyle
+    <ul>
+    <li> Format </li>
+    <li> Alignment </li>
+    <li> Font </li>
+    <li> ... </li>
+    </ul>
+</li>
+</ul>
+-->
+
+<h4> Code to Update Records  </h4>
+<pre>
+    Private Sub SalesStaffBindingNavigatorSaveItem_Click(. . .) _
+                Handles SalesStaffBindingNavigatorSaveItem.Click
+        Me.Validate()
+        Me.SalesStaffBindingSource.EndEdit()
+        Me.SalesStaffTableAdapter.Update(Me.MyCompanyDataSet.SalesStaff)
+    End Sub
+</pre>
+
+<h4> Button Reload </h4>
+<pre>
+   Private Sub ToolStripButton2_Click(. . .) Handles ToolStripButton2.Click
+      Me.SalesStaffTableAdapter.Fill(Me.MyCompanyDataSet.SalesStaff)
+   End Sub
+</pre>
+
+
+<h4> Removing Data Connection and Data Source </h4>
+
+<h4> Lab 7: Do frmGrid </h4>
+
+</body>
+</html>

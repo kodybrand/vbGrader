@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>CS234: Programming in Visual Basic </title>
+   </head>
+   <body>
+      <center><h4>
+            CS234 - Database Queries
+         </h4>
+      </center>
+
+      <h4>
+         SQL (Structured Query Language)
+      </h4>
+      The only query language for relational databases.
+      <pre>
+   Select *
+   From   SalesStaff;
+   
+   Select LastName, FirstName, Salary
+   From   SalesStaff;
+   
+   Select LastName, FirstName, Salary
+   From   SalesStaff
+   Where  FullTime <> Yes;
+   
+   Select LastName, FirstName, Salary
+   From   SalesStaff
+   Where  Salary >= 50000;
+   
+   Select ID, LastName, FirstName, Salary
+   From   SalesStaff
+   Where  LastName = 'Yang';
+   
+   Select ID, LastName, FirstName, Salary
+   From   SalesStaff
+   Where  LastName Like 'Y%';
+</pre>
+
+<p><b> String in single quotes. </b></p>
+
+      <h4>
+         Queries using Server Explorer
+      </h4>
+      <h4>
+         Queries on DataGridView
+      </h4>
+      <ul>
+         <li>
+            DataSet
+            <!--
+            <ul>
+               <li>
+                  Dataset icon
+               </li>
+               <li>
+                  Smart Tag
+               </li>
+               <li>
+                  Edit in dataset designer
+               </li>
+               <li>
+                  SQL
+               </li>
+               <li>
+                  Properties
+               </li>
+               <li> CommandText </li>
+               <li> SQL Builder </li>
+               <li> Add Query: We will use TableAdapter </li>
+            </ul>
+         -->
+         <br /> We will use TableAdapter
+         </li>
+         <li>
+            TableAdapter
+            <ul>
+               <li>
+                  Drag and Drop from Data Source to get DataGridView
+               </li>
+               <li>
+                  TableAdapter icon on Design tray
+               </li>
+               <li>
+                  Right click Smart Tag
+               </li>
+               <li>
+                  Add Query
+               </li>
+               <li>
+                  Select data source table
+               </li>
+               <li>
+                  New query name
+               </li>
+               <li>
+                  Query Text: SQL statement (no semicolon needed)
+               </li>
+               <li>
+                  SQL Builder
+               </li>
+               <li>Execute Query to test </li>
+            </ul>
+         </li>
+         <li>
+            New Query ToolStrip with code
+            <pre>
+      Try
+         Me.SalesStaffTableAdapter.FullTime(Me.DsMyCompany.SalesStaff)
+      Catch ex As System.Exception
+         System.Windows.Forms.MessageBox.Show(ex.Message)
+      End Try
+</pre>
+         </li>
+         <li>
+            Copy and Paste the code to any where
+         </li>
+      </ul>
+      <h4>
+         Queries with parameters
+      </h4>
+      SQL statement
+      <pre>
+     SELECT ID, Salary, FirstName, FullTime, HireDate, LastName 
+     FROM SalesStaff
+     Where lastname like ? + '%'
+</pre>
+      The VB code
+      <pre>
+         Try
+            Me.SalesStaffTableAdapter.LastNameStart(Me.DsMyCompany.SalesStaff, textbox1.text)
+         Catch ex As System.Exception
+            System.Windows.Forms.MessageBox.Show(ex.Message)
+         End Try
+</pre>
+      Another way
+      <pre>
+     SELECT ID, Salary, FirstName, FullTime, HireDate, LastName 
+     FROM SalesStaff
+     Where lastname like ?
+
+
+         Try
+            Me.SalesStaffTableAdapter.LastNameStart(Me.DsMyCompany.SalesStaff, textbox1.text & "%")
+         Catch ex As System.Exception
+            System.Windows.Forms.MessageBox.Show(ex.Message)
+         End Try
+</pre>
+     The same approach as without parameters.
+
+<h4>Edit Query </h4>
+<ul>
+               <li>
+                  TableAdapter icon
+               </li>
+               <li>
+                  Smart Tag
+               </li>
+               <li>Edit Query in DataSet Designer </li>
+               <li> Right click the query </li>
+               <li> Configure </li>
+               <li> SQL Builder </li>
+
+</ul>
+
+
+<h4> StatusStrip </h4>
+<ul>
+<li> BorderSides </li>
+<li> BorderStyle </li>
+<li> Spring </li>
+</ul>
+
+<h4> Project </h4>
+<p>
+Use query for login
+</p>
+
+<!--
+<h4> Test 5 </h4>
+<p>
+Thursday, Nov 19
+</p>
+-->
+
+      <h4>
+         Lab 8
+      </h4>
+<ul>
+<li> Date and Time
+	<ul>
+	<li> VB object Now </li>
+	<li> ToLongDateString </li>
+	<li> ToLongTimeString</li>
+	<li> ... </li>
+	</ul>
+
+</li>
+
+<li> Can you make the query on last name case sensitive? </li>
+</ul>
+
+
+</body>
+</html>

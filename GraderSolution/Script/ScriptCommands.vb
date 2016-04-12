@@ -53,12 +53,15 @@ Public Class ScriptCommands
     ' [scoreAmount] In - How much an incorrect answer is worth.
     Public Sub check(ByVal componentName As String, ByVal propertyName As String, ByVal expectedValue As String, ByVal scoreAmount As String)
 
-        Dim temp As String = testAssembly.GetProperty(componentName, propertyName).ToString
+      Dim temp As String = testAssembly.GetProperty(componentName, propertyName).ToString
+
 
         Console.Write("")
         Console.WriteLine(totalTests & " " & componentName & " +++++++ Got: " & temp & " ----- wanted: " & expectedValue)
+      If temp Like ("Lab1 * *") Then
 
-        If Not temp = expectedValue Then
+      Else
+         If Not temp = expectedValue Then
             Dim tempString As String = "Error in Component: " & componentName & vbCrLf _
                            & "                 Property: " & propertyName & vbCrLf _
                            & "               Expected: " & expectedValue & vbCrLf _
@@ -66,11 +69,11 @@ Public Class ScriptCommands
             errorList.Add(tempString)
             totalScore -= scoreAmount
 
-        End If
+         End If
+      End If
+      totalTests += 1
 
-        totalTests += 1
-
-    End Sub
+   End Sub
 
     ' Checks to see if two components are aligned to top, left or center. 
     ' [alignPos] In - The face of the walls you are checking if aligned. (left, right, top, bottom, center)

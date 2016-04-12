@@ -1,10 +1,13 @@
 ' Sets the point value of this asignment
 TotalPoints 10
 
+CheckName
+   Form    frmLab1
+   TextBox txtInput
 ' Checks the content of the form
-Form frmLab1
-'	Text "Lab1 (firstname lastname)" 0.5
-	Height 292 0.5
+Form frmMain
+	Text "Lab1 (firstname lastname)" 0.5
+	Height 300 0.5
 	Width 500 0.5
 	FormBorderStyle Fixed3D 0.5
 	WindowState Normal 0.5
@@ -18,8 +21,8 @@ Find TextBox txtInput
 	ReadOnly False 0.5
 
 ' Checks txtSquareRoot Properties
-Find TextBox txtSquare 
-	Name txtSquare 0.5
+Find TextBox txtSquareRoot 
+	Name txtSquareRoot 0.5
 	Multiline False 0.5
 	TextAlign Right 0.5
 	ReadOnly True 0.5
@@ -28,11 +31,11 @@ Find TextBox txtSquare
 Find Label lblInput 
 	Name lblInput 0.5
 	AutoSize True 0.5
-	Text "Inputtt" 0.5
+	Text "Input" 0.5
 	
 ' Checks lblSquareRoot Properties
-Find Label lblSquare 
-	Name lblSquare 0.5
+Find Label lblSquareRoot 
+	Name lblSquareRoot 0.5
 	AutoSize True 0.5
 	Text "Square Root" 0.5
 	
