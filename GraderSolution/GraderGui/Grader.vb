@@ -73,15 +73,22 @@ Public Class Grader
     ' Notes: The way outfile works might need to be changed to ensure it makes a seperate file for each student.
     Public Shared Sub GradeMultipleExeFiles(ByVal exeFolder As String, ByVal inFile As String, ByVal outFile As String)
 
-        Dim exeFiles() As String = Directory.GetFiles(exeFolder, "*.exe")
+      Dim exeFiles() As String = Directory.GetFiles(exeFolder, "*.exe")
+      Dim errorlog As String = ""
+      Dim gradeCount As Integer = 0
+
 
         For Each path In exeFiles
 
-            If Not path.Contains(".vshost") And Not path.Contains("VBGrader.exe") Then
-                launchTester(path, inFile, outFile)
+         If Not path.Contains(".vshost") And Not path.Contains("VBGrader.exe") Then
+            launchTester(path, inFile, outFile)
+            gradeCount += 1
+            errorlog = vbCrLf + errorlog + " = = = = = Grade " + gradeCount.ToString + "  = = = = = " + vbCrLf
+            errorlog = errorlog + System.IO.File.ReadAllText(outFile)
 
-            End If
-        Next
+         End If
+      Next
+      System.IO.File.WriteAllText(outFile, errorlog)
 
     End Sub
 
@@ -102,7 +109,7 @@ Public Class Grader
     ' [outputFile] In - The file used to write output for grading of student.
     Private Shared Sub launchTester(ByVal exePath As String, ByVal inputFile As String, ByVal outputFile As String)
 
-        Dim testScript = New Script.Script(inputFile, outputFile, exePath)
+      Dim testScript = New Script.Script(inputFile, outputFile, exePath)
 
         If exePath = "" Then
             Throw New Exception("No exe was specified.")
@@ -115,7 +122,7 @@ Public Class Grader
         End If
 
         Try
-            testScript.runScript()
+         testScript.runScript()
 
         Catch ex As Exception
             Console.WriteLine(ex.Message)

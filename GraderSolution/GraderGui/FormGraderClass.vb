@@ -88,7 +88,7 @@ Public Class FormGraderClass
 
         Try
             Grader.GradeMultipleExeFiles(Folder, InputFile, OutputFile)
-            txtOutput.Text = System.IO.File.ReadAllText(OutputFile)
+         txtOutput.Text = System.IO.File.ReadAllText(OutputFile)
 
         Catch ex As Exception
             MessageBox.Show(ex.Message)

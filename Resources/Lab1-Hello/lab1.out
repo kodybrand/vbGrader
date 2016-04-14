@@ -1,3 +1,110 @@
+
+
+
+
+
+
+ = = = = = Grade 1  = = = = = 
+---------- 9 Points out of 10 Points ---------
+---------- 5 Errors out of 10 Tests ----------
+
+Error in Component: frmLab1
+                 Property: Height
+               Expected: 400
+              But Found: 410
+
+Error in Component: frmLab1
+                 Property: Width
+               Expected: 600
+              But Found: 610
+
+Grader execution was stopped
+
+Control: lblName of type Label could not be found
+
+Fix problem and resubmit solution
+ = = = = = Grade 2  = = = = = 
+---------- 6 Points out of 10 Points ---------
+---------- 7 Errors out of 23 Tests ----------
+
+Error in Component: frmLab1
+                 Property: Height
+               Expected: 400
+              But Found: 410
+
+Error in Component: frmLab1
+                 Property: Width
+               Expected: 600
+              But Found: 610
+
+Error in variable: msgCaption
+          Expected: Lab 1
+         But Found: Lab1
+
+Error in variable: msgCaption
+          Expected: Lab 1
+         But Found: Lab1
+
+Error in variable: msgLabel_line1
+          Expected: Enter Your Name Please!
+         But Found: Please enter your name!
+
+Error in variable: msgCaption
+          Expected: Lab 1
+         But Found: Lab1
+
+Error in variable: msgLabel_line1
+          Expected: Enter Your Name Please!
+         But Found: Please enter your name!
+
+ = = = = = Grade 3  = = = = = 
+---------- 8 Points out of 10 Points ---------
+---------- 4 Errors out of 23 Tests ----------
+
+Error in Component: frmLab1
+                 Property: Height
+               Expected: 400
+              But Found: 404
+
+Error in Component: frmLab1
+                 Property: Width
+               Expected: 600
+              But Found: 604
+
+Error in Component: txtName
+                 Property: Vertical
+               Expected: 202
+              But Found: 171
+
+Error in Component: btnHello
+                 Property: Horizontal
+               Expected: 302
+              But Found: 296
+
+ = = = = = Grade 4  = = = = = 
+---------- 10 Points out of 10 Points ---------
+---------- 3 Errors out of 0 Tests ----------
+
+Grader execution was stopped
+
+Could not find form: frmLab1
+
+Fix problem and resubmit solution
+ = = = = = Grade 5  = = = = = 
+---------- 9 Points out of 10 Points ---------
+---------- 2 Errors out of 23 Tests ----------
+
+Error in Component: frmLab1
+                 Property: Height
+               Expected: 400
+              But Found: 404
+
+Error in Component: frmLab1
+                 Property: Width
+               Expected: 600
+              But Found: 604
+
+ = = = = = Grade 6  = = = = = 
 ---------- 9 Points out of 10 Points ---------
 ---------- 2 Errors out of 23 Tests ----------
 
