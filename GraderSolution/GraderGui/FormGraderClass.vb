@@ -127,4 +127,9 @@ Public Class FormGraderClass
    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
 
    End Sub
+
+   Private Sub FormGraderClass_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+      Dim temp = e.CloseReason
+
+   End Sub
 End Class

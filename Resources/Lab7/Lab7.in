@@ -2,7 +2,7 @@
 TotalPoints 10
 
 CheckName
-   Form    FormClassGrid 
+   Form    FormClassGrid
    DataGridView    grdSalesStaff
    BindingNavigator SalesStaffBindingNavigator
    
@@ -15,17 +15,21 @@ CheckName
 '	WindowState Normal 0.5
 '	StartPosition CenterScreen 0.5
 	
-'Find BindingNavigator SalesStaffBindingNavigator
-'	BackColor   "Color [ControlDark]" 0.5
+Find BindingNavigator SalesStaffBindingNavigator
+	BackColor   "Color [ControlDark]" 0.5
+	clickBindingNavigator "move next"
+	clickBindingNavigator "move next"
 	
-Find DataGridView grdSalesStaff 
-	Name grdSalesStaff 0.5
-	DataPropertyName "ID" 0.5
-	Height 220 0.5 
-	Width 514 0.5
+'Find DataGridView grdSalesStaff 
+'	Name grdSalesStaff 0.5
+'	DataPropertyName "ID" 0.5
+'	Height 220 0.5 
+'	Width 514 0.5
+	
 
+	
 'CheckName
- '  Form    FormClassIndividual
+'	Form    FormClassIndividual
 	
 ' Checks the content of the form	
 'Form frmIndividual

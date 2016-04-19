@@ -105,6 +105,16 @@ Public Class AssemblyImage
    Public Sub New(ByVal exePath As String)
 
       _filePath = exePath
+      values.Add("bn-btn-first", "move first")
+      values.Add("bn-btn-previous", "move previous")
+      values.Add("bn-btn-next", "move next")
+      values.Add("bn-btn-last", "move last")
+      values.Add("bn-btn-new", "add new")
+      values.Add("bn-btn-delete", "delete")
+      values.Add("bn-btn-save", "save")
+      values.Add("bn-btn-reload", "reload")
+      values.Add("bn-btn-list", "list")
+      values.Add("bn-btn-exit", "exit")
 
    End Sub
 
@@ -266,6 +276,43 @@ Public Class AssemblyImage
       End Try
    End Sub
 
+
+   Public Function getKey(ByVal buttonName As String)
+      Try
+         Select Case buttonName.ToUpper
+            Case "MOVE FIRST"
+               Return "bn-btn-first"
+
+            Case "MOVE PREVIOUS"
+               Return "bn-btn-previous"
+
+            Case "MOVE NEXT"
+               Return "bn-btn-next"
+
+            Case "MOVE LAST"
+               Return "bn-btn-last"
+
+            Case "ADD NEW"
+               Return "bn-btn-new"
+
+            Case "DELETE"
+               Return "bn-btn-delete"
+
+            Case "SAVE DATA"
+               Return "bn-btn-save"
+            Case "RELOAD"
+               Return "bn-btn-reload"
+            Case "LIST"
+               Return "bn-btn-list"
+            Case "EXIT"
+               Return "bn-btn-exit"
+         End Select
+      Catch ex As Exception
+
+      End Try
+      Return "not in values"
+   End Function
+
    ' For the currently selected Windows Form, if the form has a bindingNavigator, then
    ' this will click a button, as defined by a user, on that bindingNavigator.
    ' [buttonName] In - Name of the button on the bindingNavigator that will be clicked.
@@ -273,7 +320,9 @@ Public Class AssemblyImage
    '                   "move last", "add new", "delete", save data", "reload", "list", "exit"
    Public Sub clickBindingNavigator(ByVal buttonName As String)
 
-      _currentForm.Invoke(New clickDelegate(AddressOf _clickBindingNavigator), values(buttonName))
+
+      Dim key = getKey(buttonName)
+      _currentForm.Invoke(New clickDelegate(AddressOf _clickBindingNavigator), values(key))
 
    End Sub
 

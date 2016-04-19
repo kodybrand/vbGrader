@@ -30,3 +30,11 @@ C:\Users\brandk\Documents\Projects\vbGrader\GraderSolution\VBGraderProject\obj\x
 C:\Users\brandk\Documents\Projects\vbGrader\GraderSolution\VBGraderProject\obj\x86\Debug\VBGrader.dll
 C:\Users\brandk\Documents\Projects\vbGrader\GraderSolution\VBGraderProject\obj\x86\Debug\VBGrader.xml
 C:\Users\brandk\Documents\Projects\vbGrader\GraderSolution\VBGraderProject\obj\x86\Debug\VBGrader.pdb
+C:\Users\muellerale\Desktop\vbGrader-master\GraderSolution\VBGraderProject\bin\Debug\VBGrader.dll
+C:\Users\muellerale\Desktop\vbGrader-master\GraderSolution\VBGraderProject\bin\Debug\VBGrader.pdb
+C:\Users\muellerale\Desktop\vbGrader-master\GraderSolution\VBGraderProject\bin\Debug\VBGrader.xml
+C:\Users\muellerale\Desktop\vbGrader-master\GraderSolution\VBGraderProject\obj\x86\Debug\UWPCS3340.Resources.resources
+C:\Users\muellerale\Desktop\vbGrader-master\GraderSolution\VBGraderProject\obj\x86\Debug\ProgramAssemblyTools.vbproj.GenerateResource.Cache
+C:\Users\muellerale\Desktop\vbGrader-master\GraderSolution\VBGraderProject\obj\x86\Debug\VBGrader.dll
+C:\Users\muellerale\Desktop\vbGrader-master\GraderSolution\VBGraderProject\obj\x86\Debug\VBGrader.xml
+C:\Users\muellerale\Desktop\vbGrader-master\GraderSolution\VBGraderProject\obj\x86\Debug\VBGrader.pdb
