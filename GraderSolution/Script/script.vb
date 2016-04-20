@@ -301,8 +301,9 @@ Public Class Script
                     If args(0).ToLower.Contains("centered") Then
                         scriptCommander.checkCentered(currentForm, loadedProperty, args(1), args(2))
 
-                    Else
-                        scriptCommander.check(loadedProperty, args(0), args(1), args(2))
+               Else
+
+                  scriptCommander.check(loadedProperty, args(0), args(1), args(2))
 
                     End If
                 Else

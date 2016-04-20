@@ -51,50 +51,50 @@ Public Class AssemblyImage
 
 #Region "Delegate Variables"
 
-    ' Delegates the changing of selected indexes in listboxes.
-    Public Delegate Sub changeListBoxSelectedIndex(ByVal componentName As String, ByVal index As Integer)
+   ' Delegates the changing of selected indexes in listboxes.
+   Public Delegate Sub changeListBoxSelectedIndex(ByVal componentName As String, ByVal index As Integer)
 
-    ' Delegates the click action.
-    Public Delegate Sub clickDelegate(ByVal componentName As String)
+   ' Delegates the click action.
+   Public Delegate Sub clickDelegate(ByVal componentName As String)
 
-    ' Delegates closing of forms
-    Public Delegate Sub closeFormDel(ByRef form As Form)
+   ' Delegates closing of forms
+   Public Delegate Sub closeFormDel(ByRef form As Form)
 
-    ' Delegates the form pointers.
-    Public Delegate Sub currentFormHandle()
+   ' Delegates the form pointers.
+   Public Delegate Sub currentFormHandle()
 
-    ' Delegate to get comboBox
-    Public Delegate Sub getComboBox(ByVal comboBoxName As String, ByVal propertyName As String)
+   ' Delegate to get comboBox
+   Public Delegate Sub getComboBox(ByVal comboBoxName As String, ByVal propertyName As String)
 
-    ' Delegates the retrieval of listbox info.
-    Public Delegate Sub getLstBox(ByVal listBoxName As String)
+   ' Delegates the retrieval of listbox info.
+   Public Delegate Sub getLstBox(ByVal listBoxName As String)
 
-    Public Delegate Sub setControlPropDelegate(ByVal formName As String, ByVal propertyName As String, ByVal value As String)
+   Public Delegate Sub setControlPropDelegate(ByVal formName As String, ByVal propertyName As String, ByVal value As String)
 
-    ' Delegates the set properties action.
-    Public Delegate Sub setDelegate(ByVal parms As List(Of String))
+   ' Delegates the set properties action.
+   Public Delegate Sub setDelegate(ByVal parms As List(Of String))
 
-    Public Delegate Sub setComboBoxDelegate(ByVal comboBoxName As String, ByVal propertyName As String, ByVal value As String)
+   Public Delegate Sub setComboBoxDelegate(ByVal comboBoxName As String, ByVal propertyName As String, ByVal value As String)
 
 #End Region
 
 #Region "Properties"
 
-    ' GG3340
-    ' Gets and sets the active control. 
-    ' I don't know if setting works. This was implemented by Greg Gramm, I believe.
-    Public Property ActiveControl() As String
+   ' GG3340
+   ' Gets and sets the active control. 
+   ' I don't know if setting works. This was implemented by Greg Gramm, I believe.
+   Public Property ActiveControl() As String
 
-        Get
-            Return _activeControl
+      Get
+         Return _activeControl
 
-        End Get
+      End Get
 
-        Set(ByVal value As String)
-            _activeControl = value
+      Set(ByVal value As String)
+         _activeControl = value
 
-        End Set
-    End Property
+      End Set
+   End Property
 
 #End Region
 
@@ -118,8 +118,8 @@ Public Class AssemblyImage
 
    End Sub
 
-    ' Invokes a method on a given form as specified by the user.
-    ' This can invoke any method availible on the form if the user has permissions.
+   ' Invokes a method on a given form as specified by the user.
+   ' This can invoke any method availible on the form if the user has permissions.
    ' [form] In - The form to perform the action on.
    ' [methodName] In - The name of the method to be invoked.
    ' [params] In - Any params the method may require.
@@ -300,12 +300,16 @@ Public Class AssemblyImage
 
             Case "SAVE DATA"
                Return "bn-btn-save"
+
             Case "RELOAD"
                Return "bn-btn-reload"
+
             Case "LIST"
                Return "bn-btn-list"
+
             Case "EXIT"
                Return "bn-btn-exit"
+
          End Select
       Catch ex As Exception
 
@@ -678,6 +682,7 @@ Public Class AssemblyImage
          Dim tempControl = Control.FromHandle(cptr)
 
          If Not tempControl Is Nothing Then
+
             If tempControl.GetType().Name.ToUpper = controlType.ToUpper Then
                If tempControl.Name = controlName Then
 
@@ -1142,162 +1147,162 @@ Public Class AssemblyImage
 
    End Sub
 
-    ' Sets a property of a given control on the current form.
-    ' This is the delegate function
-    ' [controlName] In - Name of the control on the form.
-    ' [propertyName] In - Name of the property to be changed.
-    ' [setValue] In - The value desired to set the property to.
-    Private Sub _setControlProperty(ByVal controlName As String, ByVal propertyName As Object, ByVal setVal As String)
+   ' Sets a property of a given control on the current form.
+   ' This is the delegate function
+   ' [controlName] In - Name of the control on the form.
+   ' [propertyName] In - Name of the property to be changed.
+   ' [setValue] In - The value desired to set the property to.
+   Private Sub _setControlProperty(ByVal controlName As String, ByVal propertyName As Object, ByVal setVal As String)
 
-        Dim myControl As Control = getControl(controlName)
+      Dim myControl As Control = getControl(controlName)
 
-        If Not myControl Is Nothing Then
+      If Not myControl Is Nothing Then
 
-            Dim controlProperty = myControl.GetType().GetProperty(propertyName, flags)
+         Dim controlProperty = myControl.GetType().GetProperty(propertyName, flags)
 
-            If (Not controlProperty Is Nothing And controlProperty.CanWrite) Then
+         If (Not controlProperty Is Nothing And controlProperty.CanWrite) Then
 
-                controlProperty.SetValue(myControl, setVal, Nothing)
+            controlProperty.SetValue(myControl, setVal, Nothing)
 
-            End If
+         End If
 
-        End If
+      End If
 
-    End Sub
+   End Sub
 
-    ' Sets the value of a cell on a dataGridVied on the currently focused form.
-    ' [row] In - Row on the DataGridView for the value.
-    ' [col] In - Collum on the DataGridView for the value.
-    ' [value] - Value you want to set on the dataGridView cell.
-    Public Sub setDataGridValue(ByVal row As Integer, ByVal col As Integer, ByVal value As String)
+   ' Sets the value of a cell on a dataGridVied on the currently focused form.
+   ' [row] In - Row on the DataGridView for the value.
+   ' [col] In - Collum on the DataGridView for the value.
+   ' [value] - Value you want to set on the dataGridView cell.
+   Public Sub setDataGridValue(ByVal row As Integer, ByVal col As Integer, ByVal value As String)
 
-        getCurrentFormHandle()
+      getCurrentFormHandle()
 
-        Dim dgv As DataGridView = getDataGridView()
+      Dim dgv As DataGridView = getDataGridView()
 
-        Try
-            If dgv.Rows(row).Cells.Item(col).ValueType = GetType(Boolean) Then
-                If value.ToUpper = "TRUE" Then
-                    dgv.Rows(row).Cells.Item(col).Value = True
-                Else
-                    dgv.Rows(row).Cells.Item(col).Value = False
-                End If
+      Try
+         If dgv.Rows(row).Cells.Item(col).ValueType = GetType(Boolean) Then
+            If value.ToUpper = "TRUE" Then
+               dgv.Rows(row).Cells.Item(col).Value = True
             Else
-                dgv.Rows(row).Cells.Item(col).Value = value
+               dgv.Rows(row).Cells.Item(col).Value = False
             End If
-        Catch ex As Exception
-            Console.WriteLine("Error setting Data Grid Value")
-            Console.WriteLine(ex.Message)
-            MessageBox.Show(ex.Message)
+         Else
+            dgv.Rows(row).Cells.Item(col).Value = value
+         End If
+      Catch ex As Exception
+         Console.WriteLine("Error setting Data Grid Value")
+         Console.WriteLine(ex.Message)
+         MessageBox.Show(ex.Message)
 
-        End Try
+      End Try
 
-    End Sub
+   End Sub
 
-    ' Sets the current form based on a string passed by a user.
-    ' [formName] In - Name of the form you with to set to.
-    '
-    ' Return: If the form was found or not.
-    Public Function setCurrentForm(ByVal formName As String) As Boolean
+   ' Sets the current form based on a string passed by a user.
+   ' [formName] In - Name of the form you with to set to.
+   '
+   ' Return: If the form was found or not.
+   Public Function setCurrentForm(ByVal formName As String) As Boolean
 
-        _currentForm = _allForms(formName)
+      _currentForm = _allForms(formName)
 
-        If IsNothing(_currentForm) Then
-            Return False
+      If IsNothing(_currentForm) Then
+         Return False
 
-        Else
-            Return True
+      Else
+         Return True
 
-        End If
-    End Function
+      End If
+   End Function
 
-    ' Sets a property on an active form the user has specified.
-    ' [formName] In - The name of the form whose property you are looking for.
-    ' [propertyName] In - The name of the property on the current form.
-    ' [value] In - The value to set the property to.
-    Public Sub setFormProperty(ByVal formName As String, ByVal propertyName As String, ByVal value As String)
+   ' Sets a property on an active form the user has specified.
+   ' [formName] In - The name of the form whose property you are looking for.
+   ' [propertyName] In - The name of the property on the current form.
+   ' [value] In - The value to set the property to.
+   Public Sub setFormProperty(ByVal formName As String, ByVal propertyName As String, ByVal value As String)
 
-        Dim cDel As New setDelegate(AddressOf _setFormProperty)
-        Dim parms As List(Of String) = New List(Of String)
+      Dim cDel As New setDelegate(AddressOf _setFormProperty)
+      Dim parms As List(Of String) = New List(Of String)
 
-        parms.Add(formName)
-        parms.Add(propertyName)
-        parms.Add(value)
+      parms.Add(formName)
+      parms.Add(propertyName)
+      parms.Add(value)
 
-        Dim frm As Form = _currentForm.Invoke(cDel, parms)
+      Dim frm As Form = _currentForm.Invoke(cDel, parms)
 
-    End Sub
+   End Sub
 
-    ' Sets a property on an active form the user has specified.
-    ' [formName] In - The name of the form whose property you are looking for.
-    ' [propertyName] In - The name of the property on the current form.
-    ' [value] In - The value to set the property to.
-    '
-    ' Notes: Bad function, but do we need it at all?
-    Private Sub _setFormProperty(ByVal parms As List(Of String))
+   ' Sets a property on an active form the user has specified.
+   ' [formName] In - The name of the form whose property you are looking for.
+   ' [propertyName] In - The name of the property on the current form.
+   ' [value] In - The value to set the property to.
+   '
+   ' Notes: Bad function, but do we need it at all?
+   Private Sub _setFormProperty(ByVal parms As List(Of String))
 
-        childrenHandles = WindowFunctions.GetWindows()
+      childrenHandles = WindowFunctions.GetWindows()
 
-        Dim frm As New Form
+      Dim frm As New Form
 
-        For Each ptr As IntPtr In childrenHandles
-            Try
-                frm = Form.FromHandle(ptr)
+      For Each ptr As IntPtr In childrenHandles
+         Try
+            frm = Form.FromHandle(ptr)
 
-                If frm.Name = parms(0) Then
-                    Exit For
+            If frm.Name = parms(0) Then
+               Exit For
 
-                End If
+            End If
 
-            Catch ex As Exception
+         Catch ex As Exception
 
-            End Try
-        Next
+         End Try
+      Next
 
-        If parms(1).ToLower = "width" Then
-            frm.Width = Integer.Parse((parms(2).ToString.Trim))
+      If parms(1).ToLower = "width" Then
+         frm.Width = Integer.Parse((parms(2).ToString.Trim))
 
-        ElseIf parms(1).ToLower = "height" Then
-            frm.Height = Integer.Parse((parms(2).ToString.Trim))
+      ElseIf parms(1).ToLower = "height" Then
+         frm.Height = Integer.Parse((parms(2).ToString.Trim))
 
-        End If
-    End Sub
+      End If
+   End Sub
 
-    ' Determines component names based on position on the screen.
-    ' [control1] In - First control to be compared against.
-    ' [control2] In - Second control to be compared against.
-    Private Shared Function sortByPosition(ByVal control1 As Control, ByVal control2 As Control) As Integer
+   ' Determines component names based on position on the screen.
+   ' [control1] In - First control to be compared against.
+   ' [control2] In - Second control to be compared against.
+   Private Shared Function sortByPosition(ByVal control1 As Control, ByVal control2 As Control) As Integer
 
-        If control1 Is Nothing Then
-            If control2 Is Nothing Then
-                Return 0
+      If control1 Is Nothing Then
+         If control2 Is Nothing Then
+            Return 0
+
+         Else
+            Return -1
+
+         End If
+
+      Else
+         If control2 Is Nothing Then
+            Return 1
+
+         Else
+            If control1.Location.X < control2.Location.X Then
+               Return -1
+
+            ElseIf control1.Location.X = control2.Location.X And control1.Location.Y < control2.Location.Y Then
+               Return -1
+
+            ElseIf control1.Location.X = control2.Location.X And control1.Location.Y = control2.Location.Y Then
+               Return 0
 
             Else
-                Return -1
+               Return 1
 
             End If
-
-        Else
-            If control2 Is Nothing Then
-                Return 1
-
-            Else
-                If control1.Location.X < control2.Location.X Then
-                    Return -1
-
-                ElseIf control1.Location.X = control2.Location.X And control1.Location.Y < control2.Location.Y Then
-                    Return -1
-
-                ElseIf control1.Location.X = control2.Location.X And control1.Location.Y = control2.Location.Y Then
-                    Return 0
-
-                Else
-                    Return 1
-
-                End If
-            End If
-        End If
-    End Function
+         End If
+      End If
+   End Function
 
 #End Region
 

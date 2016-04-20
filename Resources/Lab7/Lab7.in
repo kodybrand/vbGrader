@@ -1,38 +1,21 @@
 ' Sets the point value of this asignment
 TotalPoints 10
 
-CheckName
-   Form    FormClassGrid
-   DataGridView    grdSalesStaff
-   BindingNavigator SalesStaffBindingNavigator
-   
-' Checks the content of the form
-'Form frmGrid
-'	Text "Lab7 (firstname lastname)" 0.5
-'	Height 350 0.5
-'	Width 800 0.5
-'	FormBorderStyle Sizable 0.5
-'	WindowState Normal 0.5
-'	StartPosition CenterScreen 0.5
-	
-Find BindingNavigator SalesStaffBindingNavigator
-	BackColor   "Color [ControlDark]" 0.5
-	clickBindingNavigator "move next"
-	clickBindingNavigator "move next"
-	
+Form FormClassGrid
+'	
+'Find BindingNavigator SalesStaffBindingNavigator
+'	BackColor   "Color [ControlDark]" 0.5
+'	clickBindingNavigator "move next"
+'	clickBindingNavigator "move next"
+'	
 'Find DataGridView grdSalesStaff 
 '	Name grdSalesStaff 0.5
-'	DataPropertyName "ID" 0.5
+'	'DataPropertyName "ID" 0.5
 '	Height 220 0.5 
 '	Width 514 0.5
 	
-
-	
-'CheckName
-'	Form    FormClassIndividual
-	
 ' Checks the content of the form	
-'Form frmIndividual
+Form FormClassIndividual
 '	Text "Lab7 (firstname lastname)" 0.5
 '	Height 310 0.5
 '	Width 590 0.5
@@ -40,5 +23,7 @@ Find BindingNavigator SalesStaffBindingNavigator
 '	WindowState Normal 0.5
 '	StartPosition CenterScreen 0.5	
 	
-
+Find ToolStripButton btnFirst
+	'clickBindingNavigator "move next"
+	'clickBindingNavigator "move next"
 	
