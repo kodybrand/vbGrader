@@ -71,3 +71,7 @@ K:\Courses\CSSE\yangq\cs3340\1CourseMaterials\VBGrader\TestingGrader\Lab7\Alexan
 K:\Courses\CSSE\yangq\cs3340\1CourseMaterials\VBGrader\TestingGrader\Lab7\AlexanderSam_Lab7\YangQ_Lab7\obj\x86\Debug\AlexanderSam_Lab7.exe
 K:\Courses\CSSE\yangq\cs3340\1CourseMaterials\VBGrader\TestingGrader\Lab7\AlexanderSam_Lab7\YangQ_Lab7\obj\x86\Debug\AlexanderSam_Lab7.xml
 K:\Courses\CSSE\yangq\cs3340\1CourseMaterials\VBGrader\TestingGrader\Lab7\AlexanderSam_Lab7\YangQ_Lab7\obj\x86\Debug\AlexanderSam_Lab7.pdb
+C:\Users\knappcha\Downloads\vbGrader42016\Resources\Lab7\AlexanderSam_Lab7\YangQ_Lab7\bin\Debug\AlexanderSam_Lab7.exe.config
+C:\Users\knappcha\Downloads\vbGrader42016\Resources\Lab7\AlexanderSam_Lab7\YangQ_Lab7\obj\x86\Debug\AlexanderSam_Lab7.exe
+C:\Users\knappcha\Downloads\vbGrader42016\Resources\Lab7\AlexanderSam_Lab7\YangQ_Lab7\obj\x86\Debug\AlexanderSam_Lab7.xml
+C:\Users\knappcha\Downloads\vbGrader42016\Resources\Lab7\AlexanderSam_Lab7\YangQ_Lab7\obj\x86\Debug\AlexanderSam_Lab7.pdb

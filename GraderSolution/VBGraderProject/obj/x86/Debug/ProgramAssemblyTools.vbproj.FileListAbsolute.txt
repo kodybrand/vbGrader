@@ -54,3 +54,19 @@ C:\Users\muellerale\Desktop\vbGrader\GraderSolution\VBGraderProject\obj\x86\Debu
 C:\Users\muellerale\Desktop\vbGrader\GraderSolution\VBGraderProject\obj\x86\Debug\VBGrader.dll
 C:\Users\muellerale\Desktop\vbGrader\GraderSolution\VBGraderProject\obj\x86\Debug\VBGrader.xml
 C:\Users\muellerale\Desktop\vbGrader\GraderSolution\VBGraderProject\obj\x86\Debug\VBGrader.pdb
+C:\Users\knappcha\Downloads\vbGrader42016\GraderSolution\VBGraderProject\bin\Debug\VBGrader.dll
+C:\Users\knappcha\Downloads\vbGrader42016\GraderSolution\VBGraderProject\bin\Debug\VBGrader.pdb
+C:\Users\knappcha\Downloads\vbGrader42016\GraderSolution\VBGraderProject\bin\Debug\VBGrader.xml
+C:\Users\knappcha\Downloads\vbGrader42016\GraderSolution\VBGraderProject\obj\x86\Debug\UWPCS3340.Resources.resources
+C:\Users\knappcha\Downloads\vbGrader42016\GraderSolution\VBGraderProject\obj\x86\Debug\ProgramAssemblyTools.vbproj.GenerateResource.Cache
+C:\Users\knappcha\Downloads\vbGrader42016\GraderSolution\VBGraderProject\obj\x86\Debug\VBGrader.dll
+C:\Users\knappcha\Downloads\vbGrader42016\GraderSolution\VBGraderProject\obj\x86\Debug\VBGrader.xml
+C:\Users\knappcha\Downloads\vbGrader42016\GraderSolution\VBGraderProject\obj\x86\Debug\VBGrader.pdb
+J:\New folder\vbGrader42016\GraderSolution\VBGraderProject\bin\Debug\VBGrader.dll
+J:\New folder\vbGrader42016\GraderSolution\VBGraderProject\bin\Debug\VBGrader.pdb
+J:\New folder\vbGrader42016\GraderSolution\VBGraderProject\bin\Debug\VBGrader.xml
+J:\New folder\vbGrader42016\GraderSolution\VBGraderProject\obj\x86\Debug\UWPCS3340.Resources.resources
+J:\New folder\vbGrader42016\GraderSolution\VBGraderProject\obj\x86\Debug\ProgramAssemblyTools.vbproj.GenerateResource.Cache
+J:\New folder\vbGrader42016\GraderSolution\VBGraderProject\obj\x86\Debug\VBGrader.dll
+J:\New folder\vbGrader42016\GraderSolution\VBGraderProject\obj\x86\Debug\VBGrader.xml
+J:\New folder\vbGrader42016\GraderSolution\VBGraderProject\obj\x86\Debug\VBGrader.pdb

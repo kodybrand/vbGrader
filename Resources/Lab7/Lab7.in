@@ -1,7 +1,20 @@
 ' Sets the point value of this asignment
 TotalPoints 10
 
+'CheckName
+   'Form    FormClassGrid 
+  ' DataGridView    grdSalesStaff
+ '  BindingNavigator SalesStaffBindingNavigator
+'   Label 	lblTitle
+   
+' Checks the content of the form
 Form FormClassGrid
+	Text "Lab7 (firstname lastname)" 0.5
+	Height 350 0.5
+	Width 800 0.5
+	FormBorderStyle Sizable 0.5
+	WindowState Normal 0.5
+	StartPosition CenterScreen 0.5
 '	
 Find BindingNavigator SalesStaffBindingNavigator
 	BackColor   "Color [ControlDark]" 0.5
@@ -13,8 +26,18 @@ Find DataGridView grdSalesStaff
 	'DataPropertyName "ID" 0.5
 	Height 220 0.5 
 	Width 514 0.5
-	
+	Centered Horizontal 0.5
+
+Find Label lblTitle 
+	Name lblTitle 0.5
+	Text "Employees" 0.5
+	Centered Horizontal 0.5
+	AutoSize True 0.5
+	Font "[Font: Name=Microsoft Sans Serif, Size=14, Units=3, GdiCharSet=0, GdiVerticalFont=False]" 0.5
 ' Checks the content of the form	
+'CheckName 
+'	Form   FormClassIndividual
+	
 Form FormClassIndividual
 	Text "Lab7 (firstname lastname)" 0.5
 	Height 310 0.5
@@ -22,6 +45,7 @@ Form FormClassIndividual
 	FormBorderStyle Fixed3D 0.5
 	WindowState Normal 0.5
 	StartPosition CenterScreen 0.5
+
 	
 'Find ToolStrip tolStripIndividual
 	clickToolStrip "toolstripbutton5"

@@ -115,7 +115,7 @@ Public Class FormGraderClass
         Try
 
             Grader.BuildSingleSoltion(buildSolution, InputFile, OutputFile)
-
+         txtOutput.Text = System.IO.File.ReadAllText(OutputFile)
         Catch ex As Exception
 
             MessageBox.Show(ex.Message)
@@ -125,6 +125,12 @@ Public Class FormGraderClass
    End Sub
 
    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+
+      Try
+         Grader.GradeSLNFiles(Folder, InputFile, OutputFile)
+      Catch ex As Exception
+         MessageBox.Show(ex.Message)
+      End Try
 
    End Sub
 

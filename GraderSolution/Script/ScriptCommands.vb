@@ -60,6 +60,8 @@ Public Class ScriptCommands
         Console.WriteLine(totalTests & " " & componentName & " +++++++ Got: " & temp & " ----- wanted: " & expectedValue)
       If temp Like ("Lab1 * *") Then
 
+      ElseIf temp Like ("Lab7 * *") Then
+
       Else
          If Not temp = expectedValue Then
             Dim tempString As String = "Error in Component: " & componentName & vbCrLf _
@@ -637,7 +639,7 @@ Public Class ScriptCommands
     Public Sub sendKey(ByVal componentName As String, ByVal keyPressed As Char)
 
         If setFocus(componentName) Then
-            SendKeys.SendWait(keyPressed)
+         SendKeys.SendWait(keyPressed)
 
         Else
             Dim tempString As String = "Error in setting Focus: " & componentName & vbCrLf _

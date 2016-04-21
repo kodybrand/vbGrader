@@ -492,6 +492,7 @@ Public Class AssemblyImage
       'WindowFunctions.SendMessage(formHandle, WM_SYSCOMMAND, SC_CLOSE, 0)
 
       form.Close()
+      form.Dispose()
 
    End Sub
 

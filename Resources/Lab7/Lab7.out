@@ -1,15 +1,10 @@
 ---------- 8 Points out of 10 Points ---------
----------- 4 Errors out of 10 Tests ----------
+---------- 3 Errors out of 22 Tests ----------
 
 Error in Component: grdSalesStaff
                  Property: Width
                Expected: 514
               But Found: 524
-
-Error in Component: FormClassIndividual
-                 Property: Text
-               Expected: Lab7 (firstname lastname)
-              But Found: Lab7 (Qi Yang)
 
 Error in Component: FormClassIndividual
                  Property: Height

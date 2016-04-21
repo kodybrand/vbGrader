@@ -86,3 +86,18 @@ C:\Users\muellerale\Desktop\vbGrader\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\obj\x8
 C:\Users\muellerale\Desktop\vbGrader\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.FormClassIndividual.resources
 C:\Users\muellerale\Desktop\vbGrader\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.Resources.resources
 C:\Users\muellerale\Desktop\vbGrader\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.vbproj.GenerateResource.Cache
+C:\Users\knappcha\Downloads\vbGrader42016\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\bin\Debug\YangQ_Lab7.exe.config
+C:\Users\knappcha\Downloads\vbGrader42016\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.exe
+C:\Users\knappcha\Downloads\vbGrader42016\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.xml
+C:\Users\knappcha\Downloads\vbGrader42016\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.pdb
+J:\New folder\vbGrader42016\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\bin\Debug\YangQ_Lab7.exe.config
+J:\New folder\vbGrader42016\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.exe
+J:\New folder\vbGrader42016\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.xml
+J:\New folder\vbGrader42016\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.pdb
+J:\New folder\vbGrader42016\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\bin\Debug\YangQ_Lab7.exe
+J:\New folder\vbGrader42016\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\bin\Debug\YangQ_Lab7.pdb
+J:\New folder\vbGrader42016\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\bin\Debug\YangQ_Lab7.xml
+J:\New folder\vbGrader42016\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.FormClassGrid.resources
+J:\New folder\vbGrader42016\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.FormClassIndividual.resources
+J:\New folder\vbGrader42016\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.Resources.resources
+J:\New folder\vbGrader42016\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\obj\x86\Debug\YangQ_Lab7.vbproj.GenerateResource.Cache
