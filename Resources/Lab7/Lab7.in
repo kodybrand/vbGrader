@@ -3,27 +3,28 @@ TotalPoints 10
 
 Form FormClassGrid
 '	
-'Find BindingNavigator SalesStaffBindingNavigator
-'	BackColor   "Color [ControlDark]" 0.5
-'	clickBindingNavigator "move next"
-'	clickBindingNavigator "move next"
-'	
-'Find DataGridView grdSalesStaff 
-'	Name grdSalesStaff 0.5
-'	'DataPropertyName "ID" 0.5
-'	Height 220 0.5 
-'	Width 514 0.5
+Find BindingNavigator SalesStaffBindingNavigator
+	BackColor   "Color [ControlDark]" 0.5
+	clickBindingNavigator "move next"
+	clickBindingNavigator "move next"
+	
+Find DataGridView grdSalesStaff 
+	Name grdSalesStaff 0.5
+	'DataPropertyName "ID" 0.5
+	Height 220 0.5 
+	Width 514 0.5
 	
 ' Checks the content of the form	
 Form FormClassIndividual
-'	Text "Lab7 (firstname lastname)" 0.5
-'	Height 310 0.5
-'	Width 590 0.5
-'	FormBorderStyle Fixed3D 0.5
-'	WindowState Normal 0.5
-'	StartPosition CenterScreen 0.5	
+	Text "Lab7 (firstname lastname)" 0.5
+	Height 310 0.5
+	Width 590 0.5
+	FormBorderStyle Fixed3D 0.5
+	WindowState Normal 0.5
+	StartPosition CenterScreen 0.5
 	
-Find ToolStripButton btnFirst
-	'clickBindingNavigator "move next"
-	'clickBindingNavigator "move next"
+'Find ToolStrip tolStripIndividual
+	clickToolStrip "toolstripbutton5"
+	clickToolStrip "toolstripbutton6"
+	clickToolStrip "toolstripbutton8"
 	

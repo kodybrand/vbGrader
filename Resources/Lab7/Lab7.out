@@ -1,8 +1,23 @@
----------- 10 Points out of 10 Points ---------
----------- 3 Errors out of 0 Tests ----------
+---------- 8 Points out of 10 Points ---------
+---------- 4 Errors out of 10 Tests ----------
 
-Grader execution was stopped
+Error in Component: grdSalesStaff
+                 Property: Width
+               Expected: 514
+              But Found: 524
 
-Control: btnFirst of type ToolStripButton could not be found
+Error in Component: FormClassIndividual
+                 Property: Text
+               Expected: Lab7 (firstname lastname)
+              But Found: Lab7 (Qi Yang)
 
-Fix problem and resubmit solution
+Error in Component: FormClassIndividual
+                 Property: Height
+               Expected: 310
+              But Found: 274
+
+Error in Component: FormClassIndividual
+                 Property: Width
+               Expected: 590
+              But Found: 576
+

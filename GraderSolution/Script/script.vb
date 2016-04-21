@@ -233,10 +233,12 @@ Public Class Script
                 scriptCommander.click(args(1))
 
             Case "clickbindingnavigator"
-                scriptCommander.clickBindingNavigator(args(1))
+            scriptCommander.clickBindingNavigator(args(1))
 
-            Case "closedatabase"
-                scriptCommander.closeDatabase(args(1))
+         Case "clicktoolstrip"
+            scriptCommander.clickToolStrip(args(1))
+         Case "closedatabase"
+            scriptCommander.closeDatabase(args(1))
 
             Case "copy"
                 copyFile(args(1), args(2))

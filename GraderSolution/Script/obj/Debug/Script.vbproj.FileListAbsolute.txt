@@ -70,3 +70,15 @@ C:\Users\muellerale\Desktop\projects\GraderSolution\Script\obj\Debug\Script.xml
 C:\Users\muellerale\Desktop\projects\GraderSolution\Script\obj\Debug\Script.pdb
 C:\Users\muellerale\Desktop\projects\GraderSolution\Script\bin\Debug\VBGrader.xml
 C:\Users\muellerale\Desktop\projects\GraderSolution\Script\obj\Debug\Script.vbprojResolveAssemblyReference.cache
+C:\Users\muellerale\Desktop\vbGrader\GraderSolution\Script\bin\Debug\Script.dll
+C:\Users\muellerale\Desktop\vbGrader\GraderSolution\Script\bin\Debug\Script.pdb
+C:\Users\muellerale\Desktop\vbGrader\GraderSolution\Script\bin\Debug\Script.xml
+C:\Users\muellerale\Desktop\vbGrader\GraderSolution\Script\bin\Debug\VBGrader.dll
+C:\Users\muellerale\Desktop\vbGrader\GraderSolution\Script\bin\Debug\VBGrader.pdb
+C:\Users\muellerale\Desktop\vbGrader\GraderSolution\Script\bin\Debug\VBGrader.xml
+C:\Users\muellerale\Desktop\vbGrader\GraderSolution\Script\obj\Debug\Script.vbprojResolveAssemblyReference.cache
+C:\Users\muellerale\Desktop\vbGrader\GraderSolution\Script\obj\Debug\Script.Resources.resources
+C:\Users\muellerale\Desktop\vbGrader\GraderSolution\Script\obj\Debug\Script.vbproj.GenerateResource.Cache
+C:\Users\muellerale\Desktop\vbGrader\GraderSolution\Script\obj\Debug\Script.dll
+C:\Users\muellerale\Desktop\vbGrader\GraderSolution\Script\obj\Debug\Script.xml
+C:\Users\muellerale\Desktop\vbGrader\GraderSolution\Script\obj\Debug\Script.pdb

@@ -157,20 +157,20 @@ Partial Class FormClassIndividual
       '
       Me.mnuStripIndividual.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuGrid, Me.mnuExit})
       Me.mnuStripIndividual.Name = "ContextMenuStrip1"
-      Me.mnuStripIndividual.Size = New System.Drawing.Size(153, 70)
+      Me.mnuStripIndividual.Size = New System.Drawing.Size(139, 48)
       '
       'mnuGrid
       '
       Me.mnuGrid.Name = "mnuGrid"
       Me.mnuGrid.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.G), System.Windows.Forms.Keys)
-      Me.mnuGrid.Size = New System.Drawing.Size(152, 22)
+      Me.mnuGrid.Size = New System.Drawing.Size(138, 22)
       Me.mnuGrid.Text = "Grid"
       '
       'mnuExit
       '
       Me.mnuExit.Name = "mnuExit"
       Me.mnuExit.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.X), System.Windows.Forms.Keys)
-      Me.mnuExit.Size = New System.Drawing.Size(152, 22)
+      Me.mnuExit.Size = New System.Drawing.Size(138, 22)
       Me.mnuExit.Text = "Exit"
       '
       'LastNameTextBox
@@ -304,7 +304,7 @@ Partial Class FormClassIndividual
       Me.btnAddNew.ImageTransparentColor = System.Drawing.Color.Magenta
       Me.btnAddNew.Name = "btnAddNew"
       Me.btnAddNew.Size = New System.Drawing.Size(23, 22)
-      Me.btnAddNew.Text = "ToolStripButton5"
+      Me.btnAddNew.Text = "Add New test"
       Me.btnAddNew.ToolTipText = "Add New"
       '
       'btnDelete
@@ -314,7 +314,7 @@ Partial Class FormClassIndividual
       Me.btnDelete.ImageTransparentColor = System.Drawing.Color.Magenta
       Me.btnDelete.Name = "btnDelete"
       Me.btnDelete.Size = New System.Drawing.Size(23, 22)
-      Me.btnDelete.Text = "ToolStripButton6"
+      Me.btnDelete.Text = "Delete"
       Me.btnDelete.ToolTipText = "Delete"
       '
       'btnSave
@@ -324,7 +324,7 @@ Partial Class FormClassIndividual
       Me.btnSave.ImageTransparentColor = System.Drawing.Color.Magenta
       Me.btnSave.Name = "btnSave"
       Me.btnSave.Size = New System.Drawing.Size(23, 22)
-      Me.btnSave.Text = "ToolStripButton7"
+      Me.btnSave.Text = "Save Data"
       Me.btnSave.ToolTipText = "Save"
       '
       'btnRefresh
@@ -334,7 +334,7 @@ Partial Class FormClassIndividual
       Me.btnRefresh.ImageTransparentColor = System.Drawing.Color.Magenta
       Me.btnRefresh.Name = "btnRefresh"
       Me.btnRefresh.Size = New System.Drawing.Size(23, 22)
-      Me.btnRefresh.Text = "ToolStripButton8"
+      Me.btnRefresh.Text = "refresh"
       Me.btnRefresh.ToolTipText = "Refresh"
       '
       'TableAdapterManager1

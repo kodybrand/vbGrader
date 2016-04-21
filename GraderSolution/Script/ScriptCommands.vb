@@ -301,7 +301,13 @@ Public Class ScriptCommands
 
         testAssembly.clickBindingNavigator(buttonName)
 
-    End Sub
+   End Sub
+
+
+   'comments
+   Public Sub clickToolStrip(ByVal buttonName As String)
+      testAssembly.clickToolStrip(buttonName)
+   End Sub
 
     ' This function is used to call the function inside the test assembly to close down
     ' all the forms and stop the running threads.
