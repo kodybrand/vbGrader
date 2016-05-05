@@ -243,7 +243,7 @@ Partial Class FormClassGrid
       DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
       Me.grdSalesStaff.RowHeadersDefaultCellStyle = DataGridViewCellStyle7
       Me.grdSalesStaff.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
-      Me.grdSalesStaff.Size = New System.Drawing.Size(524, 220)
+      Me.grdSalesStaff.Size = New System.Drawing.Size(514, 220)
       Me.grdSalesStaff.TabIndex = 1
       '
       'DataGridViewTextBoxColumn1
