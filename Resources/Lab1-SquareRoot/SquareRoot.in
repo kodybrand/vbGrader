@@ -90,7 +90,7 @@ txtSquare Text 2.24 0.5
 
 ' Test for invalid input
 ' Does not know how to check multiple lines on message box
-'      but does not take ponts off
+'      but does not take points off
 SetTextboxProperty txtInput Text -8
 Click btnCompute
 Expect msgCaption = "Lab 1" 0.5

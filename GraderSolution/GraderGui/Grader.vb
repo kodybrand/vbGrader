@@ -130,6 +130,10 @@ Public Class Grader
         End Try
    End Sub
 
+   'Gets all solution files within the given directory and calls the BuildSingleSoltion for each one
+   ' [slnPath] IN - Path to folder containing .sln files
+   ' [inFile] IN - Path to Input file
+   ' [outFiles] IN - Path to Output file
    Public Shared Sub GradeSLNFiles(ByVal slnPath As String, ByVal inFile As String, ByVal outFiles As String)
       Dim slnFiles() As String = Directory.GetFiles(slnPath, "*.sln")
       Dim errLog As String = ""

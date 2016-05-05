@@ -119,6 +119,8 @@ Public Class AssemblyImage
       values.Add("ts-btn-pervious", "previous")
       values.Add("ts-btn-next", "next")
       values.Add("ts-btn-last", "last")
+      'We are well aware that this might be the worst possible way to do this...
+      'Sorry...
       values.Add("ts-btn-new", "toolstripbutton5")
       values.Add("ts-btn-delete", "toolstripbutton6")
       values.Add("ts-btn-save", "toolstripbutton7")
@@ -285,6 +287,7 @@ Public Class AssemblyImage
    End Sub
 
    'returns the key for a specified button name
+   'As of right now, there must be a case for every different button name
    Public Function getKey(ByVal buttonName As String)
       Try
          Select Case buttonName.ToUpper
@@ -341,14 +344,17 @@ Public Class AssemblyImage
       Return "not in values"
    End Function
 
-   'comments
+   'Attempts to get the button by name on the current form and click it.
+   ' [buttonName] In - Name provided by input file
    Public Sub clickToolStrip(ByVal buttonName As String)
       Dim key = getKey(buttonName)
       _currentForm.Invoke(New clickDelegate(AddressOf _clickToolStrip), values(key))
    End Sub
 
 
-   'comments
+   'Finds the tool Strip on the current form then finds the button and clicks
+   'it if it is found.
+   ' [buttonName] In - Name provided by input file
    Public Sub _clickToolStrip(ByVal buttonName As String)
       Dim tempToolStrip As ToolStrip = getToolStrip()
       Dim toolStripItems As ToolStripItemCollection
@@ -562,7 +568,7 @@ Public Class AssemblyImage
 
    End Sub
 
-
+   'Returns the tool strip of the current form
    Private Function getToolStrip() As ToolStrip
       getCurrentFormHandle()
       Dim currentHandle As IntPtr = curFrmHandle
@@ -579,8 +585,6 @@ Public Class AssemblyImage
       Next
       Return tempToolStrip
    End Function
-
-
 
    ' Gets the BindingNavigator on the currently focused Windows Form and returns that
    ' BindingNavigator.
@@ -688,12 +692,6 @@ Public Class AssemblyImage
       Return Nothing
 
    End Function
-
-
-
-
-
-
 
    ' Gets rather the currently selected index or text from a comboBox that is being searched for.
    ' [comboBoxName] In - The name of the comboBox being searched for.
