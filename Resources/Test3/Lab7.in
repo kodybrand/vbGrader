@@ -1,0 +1,73 @@
+' Sets the point value of this assignment
+TotalPoints 20
+
+Form frmSqrt
+	Height	300	0.5
+	Width	500	0.5
+	FormBorderStyle	Sizable	0.5
+	
+Find TextBox	txtInput
+	Name	"txtInput"	0.5 
+	BackColor	color [Window]	0.5
+
+Find TextBox txtSqrt
+	Name 	"txtSqrt" 	0.5
+	BackColor	color [Window]	0.5
+	ReadOnly	true	0.5
+	
+Find Label	lblInput
+	Name "lblInput"	0.5 
+	Text "Input"	0.5 
+		
+Find Label	lblSqrt
+	Name "lblSqrt" 	0.5 
+	Text "Square Root"	0.5 
+	
+Find Button	btnCompute
+	Name  "btnCompute"	0.5 
+	Text  "&Compute" 	0.5 
+	
+Find Button	btnSwitch
+	Name   "btnSwitch"  0.5 
+	Text   "&Switch"	0.5 
+	
+Find Button	btnExit
+	Name 	"btnExit"	0.5 
+	Text 	"E&xit"	0.5 
+	
+' Test for good input	
+SetTextboxProperty txtInput Text 5
+Click btnCompute
+txtSquare Text 2.24 0.5
+
+' Test for good input
+SetTextboxProperty txtInput Text 8
+Click btnCompute
+txtSquare Text 2.83 0.5
+
+' Test for good input
+SetTextboxProperty txtInput Text 0
+Click btnCompute
+txtSquare Text 0.00 0.5	
+
+Click btnSwitch
+
+Form frmBack
+	Text "Test 3 * *" 	0.5 
+	Height	206	0.5
+	Width	810	0.5
+	
+Find Button	btnBack
+	Name 	"btnBack" 	0.5 
+	Text 	"&Back"		0.5 
+	
+	
+	
+	
+	
+
+
+		
+
+
+

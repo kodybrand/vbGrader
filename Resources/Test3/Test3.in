@@ -1,0 +1,95 @@
+'Test 3 Input file
+'Team: GroupKody
+
+' Sets the point value of this assignment
+TotalPoints 20
+
+'Check frmSqrt properties	
+Form frmSqrt
+	Height	300	0.5
+	Width	500	0.5
+	FormBorderStyle	Sizable	0.5
+
+'check textbox txtInput properties 	
+Find TextBox	txtInput
+	Name	"txtInput"	0.5 
+	BackColor	"Color [Window]"	0.5
+
+'check textbox txtSquare properties 	
+Find TextBox txtSquare
+	Name 	"txtSquare" 	0.5
+	BackColor	"Color [Window]"	0.5
+	ReadOnly	True	0.5
+	
+'check label lblInput properties 		
+Find Label	lblInput
+	Name "lblInput"	0.5 
+	Text "Input"	0.5 
+
+'check label lblSqrt properties 		
+Find Label	lblSqrt
+	Name "lblSqrt" 	0.5 
+	Text "Square Root"	0.5 
+
+'check button btnCompute properties 		
+Find Button	btnCompute
+	Name  "btnCompute"	0.5 
+	Text  "&Compute" 	0.5 
+
+'check button btnSwitch properties 	
+Find Button	btnSwitch
+	Name   "btnSwitch"  0.5 
+	Text   "&Switch"	0.5 
+
+'check button btnExit properties 	
+Find Button	btnExit
+	Name 	"btnExit"	0.5 
+	Text 	"E&xit"	0.5 
+	
+'Test for good input	
+SetTextboxProperty txtInput Text 5
+Click btnCompute
+txtSquare Text 2.24 0.5
+
+'Test for good input
+SetTextboxProperty txtInput Text 8
+Click btnCompute
+txtSquare Text 2.83 0.5
+
+' Test for good input
+SetTextboxProperty txtInput Text 0
+Click btnCompute
+txtSquare Text 0.00 0.5	
+
+'Checks form frmBack 
+Form frmBack
+	Text "Test 3 * *" 	0.5 
+	Height	206			0.5
+	Width	810			0.5
+	System.Windows.Forms.Button, Text: &Back btnBack 0.5 	
+
+'Clicks btnBack 
+Click btnBack
+
+'sets form back to main(frmSqrt)
+setForm frmSqrt
+
+'Clicks btnExit to exit
+Click btnExit 
+	
+
+
+
+
+	
+	
+	
+	
+	
+	
+
+
+		
+
+
+

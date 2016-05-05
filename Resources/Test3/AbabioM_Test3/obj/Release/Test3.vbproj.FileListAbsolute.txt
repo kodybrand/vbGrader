@@ -1,0 +1,11 @@
+C:\Temp\Test3\AbabioM_Test3\bin\Release\Test3.exe
+C:\Temp\Test3\AbabioM_Test3\bin\Release\Test3.pdb
+C:\Temp\Test3\AbabioM_Test3\bin\Release\Test3.xml
+C:\Temp\Test3\AbabioM_Test3\obj\Release\Test3.vbprojResolveAssemblyReference.cache
+C:\Temp\Test3\AbabioM_Test3\obj\Release\UWPCS234.frmSqrt.resources
+C:\Temp\Test3\AbabioM_Test3\obj\Release\UWPCS234.frmBack.resources
+C:\Temp\Test3\AbabioM_Test3\obj\Release\UWPCS234.Resources.resources
+C:\Temp\Test3\AbabioM_Test3\obj\Release\Test3.vbproj.GenerateResource.Cache
+C:\Temp\Test3\AbabioM_Test3\obj\Release\Test3.exe
+C:\Temp\Test3\AbabioM_Test3\obj\Release\Test3.xml
+C:\Temp\Test3\AbabioM_Test3\obj\Release\Test3.pdb
