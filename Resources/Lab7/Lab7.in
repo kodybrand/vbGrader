@@ -1,13 +1,6 @@
 ' Sets the point value of this asignment
 TotalPoints 10
 
-'CheckName
-   'Form    FormClassGrid 
-  ' DataGridView    grdSalesStaff
- '  BindingNavigator SalesStaffBindingNavigator
-'   Label 	lblTitle
-   
-' Checks the content of the form
 Form FormClassGrid
 	Text "Lab7 (firstname lastname)" 0.5
 	Height 350 0.5
@@ -18,8 +11,34 @@ Form FormClassGrid
 '	
 Find BindingNavigator SalesStaffBindingNavigator
 	BackColor   "Color [ControlDark]" 0.5
-	clickBindingNavigator "move next"
-	clickBindingNavigator "move next"
+	
+	' Check Position 
+		contains BindingNavigatorPositionItem Text 1 0.5
+		clickBindingNavigator "move next"
+		contains BindingNavigatorPositionItem Text 2 0.5
+		clickBindingNavigator "move previous"
+		contains BindingNavigatorPositionItem Text 1 0.5
+		
+	' Checking First/Last & Next/Previous Buttons Enabled based on Position
+		contains BindingNavigatorMoveFirstItem Enabled False 0.5
+		contains BindingNavigatorMovePreviousItem Enabled False 0.5
+		clickBindingNavigator "move last"
+		contains BindingNavigatorMoveLastItem Enabled False 0.5
+		contains BindingNavigatorMoveNextItem Enabled False 0.5
+	
+	' Checking to see if buttons are Enabled/Disabled on Add
+		clickBindingNavigator "add new"
+		contains BindingNavigatorMoveFirstItem Enabled False 0.5
+		contains BindingNavigatorMovePreviousItem Enabled False 0.5
+		contains BindingNavigatorMoveLastItem Enabled False 0.5
+		contains BindingNavigatorMoveNextItem Enabled False 0.5
+		contains mnuRefresh Enabled False 0.5
+		clickBindingNavigator "delete"
+		contains BindingNavigatorMoveFirstItem Enabled True 0.5
+		contains BindingNavigatorMovePreviousItem Enabled True 0.5
+		contains BindingNavigatorMoveLastItem Enabled False 0.5
+		contains BindingNavigatorMoveNextItem Enabled False 0.5
+		contains mnuRefresh Enabled True 0.5
 	
 Find DataGridView grdSalesStaff 
 	Name grdSalesStaff 0.5
@@ -38,6 +57,7 @@ Find Label lblTitle
 'CheckName 
 '	Form   FormClassIndividual
 	
+
 Form FormClassIndividual
 	Text "Lab7 (firstname lastname)" 0.5
 	Height 310 0.5
@@ -45,10 +65,33 @@ Form FormClassIndividual
 	FormBorderStyle Fixed3D 0.5
 	WindowState Normal 0.5
 	StartPosition CenterScreen 0.5
-
 	
-'Find ToolStrip tolStripIndividual
-	clickToolStrip "toolstripbutton5"
-	clickToolStrip "toolstripbutton6"
-	clickToolStrip "toolstripbutton8"
+	' Check Position 
+		contains txtPosition Text 1 0.5
+		clickToolStrip "btnNext" 
+		contains txtPosition Text 2 0.5
+		clickToolStrip "btnPrevious"
+		contains txtPosition Text 1 0.5
+		
+	' Check Adding 
+		contains lblCount Text "of 20" 0.5
+		clickToolStrip btnAddNew
+		SetTextboxProperty IDTextBox Text 666
+		SetTextboxProperty LastNameTextBox Text	Brand
+		SetTextboxProperty FirstNameTextBox Text Kody
+		SetTextboxProperty SalaryTextBox Text 35000
+		clickToolStrip btnSave
+		contains lblCount Text "of 21" 0.5
+	
+	' Checking Remove 
+		clickToolStrip btnDelete
+		contains lblCount Text "of 2" 0.5
+		
+	
+		
+		
+		
+		
+		
+	
 	

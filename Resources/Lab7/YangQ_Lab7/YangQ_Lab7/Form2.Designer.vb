@@ -30,10 +30,6 @@ Partial Class FormClassIndividual
       Dim HireDateLabel As System.Windows.Forms.Label
       Dim SalaryLabel As System.Windows.Forms.Label
       Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormClassIndividual))
-      Me.MyCompanyDataSet = New YangQ_Lab7.MyCompanyDataSet()
-      Me.SalesStaffBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-      Me.SalesStaffTableAdapter = New YangQ_Lab7.MyCompanyDataSetTableAdapters.SalesStaffTableAdapter()
-      Me.TableAdapterManager = New YangQ_Lab7.MyCompanyDataSetTableAdapters.TableAdapterManager()
       Me.IDTextBox = New System.Windows.Forms.TextBox()
       Me.mnuStripIndividual = New System.Windows.Forms.ContextMenuStrip(Me.components)
       Me.mnuGrid = New System.Windows.Forms.ToolStripMenuItem()
@@ -57,6 +53,10 @@ Partial Class FormClassIndividual
       Me.btnDelete = New System.Windows.Forms.ToolStripButton()
       Me.btnSave = New System.Windows.Forms.ToolStripButton()
       Me.btnRefresh = New System.Windows.Forms.ToolStripButton()
+      Me.SalesStaffBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+      Me.MyCompanyDataSet = New YangQ_Lab7.MyCompanyDataSet()
+      Me.SalesStaffTableAdapter = New YangQ_Lab7.MyCompanyDataSetTableAdapters.SalesStaffTableAdapter()
+      Me.TableAdapterManager = New YangQ_Lab7.MyCompanyDataSetTableAdapters.TableAdapterManager()
       Me.TableAdapterManager1 = New YangQ_Lab7.MyCompanyDataSetTableAdapters.TableAdapterManager()
       IDLabel = New System.Windows.Forms.Label()
       LastNameLabel = New System.Windows.Forms.Label()
@@ -64,10 +64,10 @@ Partial Class FormClassIndividual
       FullTimeLabel = New System.Windows.Forms.Label()
       HireDateLabel = New System.Windows.Forms.Label()
       SalaryLabel = New System.Windows.Forms.Label()
-      CType(Me.MyCompanyDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-      CType(Me.SalesStaffBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
       Me.mnuStripIndividual.SuspendLayout()
       Me.tolStripIndividual.SuspendLayout()
+      CType(Me.SalesStaffBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+      CType(Me.MyCompanyDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
       Me.SuspendLayout()
       '
       'IDLabel
@@ -123,26 +123,6 @@ Partial Class FormClassIndividual
       SalaryLabel.Size = New System.Drawing.Size(39, 13)
       SalaryLabel.TabIndex = 11
       SalaryLabel.Text = "Salary:"
-      '
-      'MyCompanyDataSet
-      '
-      Me.MyCompanyDataSet.DataSetName = "MyCompanyDataSet"
-      Me.MyCompanyDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-      '
-      'SalesStaffBindingSource
-      '
-      Me.SalesStaffBindingSource.DataMember = "SalesStaff"
-      Me.SalesStaffBindingSource.DataSource = Me.MyCompanyDataSet
-      '
-      'SalesStaffTableAdapter
-      '
-      Me.SalesStaffTableAdapter.ClearBeforeFill = True
-      '
-      'TableAdapterManager
-      '
-      Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-      Me.TableAdapterManager.SalesStaffTableAdapter = Me.SalesStaffTableAdapter
-      Me.TableAdapterManager.UpdateOrder = YangQ_Lab7.MyCompanyDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
       '
       'IDTextBox
       '
@@ -337,6 +317,26 @@ Partial Class FormClassIndividual
       Me.btnRefresh.Text = "refresh"
       Me.btnRefresh.ToolTipText = "Refresh"
       '
+      'SalesStaffBindingSource
+      '
+      Me.SalesStaffBindingSource.DataMember = "SalesStaff"
+      Me.SalesStaffBindingSource.DataSource = Me.MyCompanyDataSet
+      '
+      'MyCompanyDataSet
+      '
+      Me.MyCompanyDataSet.DataSetName = "MyCompanyDataSet"
+      Me.MyCompanyDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+      '
+      'SalesStaffTableAdapter
+      '
+      Me.SalesStaffTableAdapter.ClearBeforeFill = True
+      '
+      'TableAdapterManager
+      '
+      Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+      Me.TableAdapterManager.SalesStaffTableAdapter = Me.SalesStaffTableAdapter
+      Me.TableAdapterManager.UpdateOrder = YangQ_Lab7.MyCompanyDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+      '
       'TableAdapterManager1
       '
       Me.TableAdapterManager1.BackupDataSetBeforeUpdate = False
@@ -367,11 +367,11 @@ Partial Class FormClassIndividual
       Me.Name = "FormClassIndividual"
       Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
       Me.Text = "Lab7 (Qi Yang)"
-      CType(Me.MyCompanyDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-      CType(Me.SalesStaffBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
       Me.mnuStripIndividual.ResumeLayout(False)
       Me.tolStripIndividual.ResumeLayout(False)
       Me.tolStripIndividual.PerformLayout()
+      CType(Me.SalesStaffBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+      CType(Me.MyCompanyDataSet, System.ComponentModel.ISupportInitialize).EndInit()
       Me.ResumeLayout(False)
       Me.PerformLayout()
 

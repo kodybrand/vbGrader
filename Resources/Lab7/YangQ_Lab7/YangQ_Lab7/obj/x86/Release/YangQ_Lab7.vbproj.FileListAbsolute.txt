@@ -46,3 +46,15 @@ C:\Users\knappcha\Downloads\vbGrader42016\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\o
 C:\Users\knappcha\Downloads\vbGrader42016\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\obj\x86\Release\YangQ_Lab7.exe
 C:\Users\knappcha\Downloads\vbGrader42016\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\obj\x86\Release\YangQ_Lab7.xml
 C:\Users\knappcha\Downloads\vbGrader42016\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\obj\x86\Release\YangQ_Lab7.pdb
+C:\Users\brandk\Documents\Projects\vbgrader\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\bin\Release\YangQ_Lab7.exe.config
+C:\Users\brandk\Documents\Projects\vbgrader\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\bin\Release\YangQ_Lab7.exe
+C:\Users\brandk\Documents\Projects\vbgrader\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\bin\Release\YangQ_Lab7.pdb
+C:\Users\brandk\Documents\Projects\vbgrader\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\bin\Release\YangQ_Lab7.xml
+C:\Users\brandk\Documents\Projects\vbgrader\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\obj\x86\Release\YangQ_Lab7.vbprojResolveAssemblyReference.cache
+C:\Users\brandk\Documents\Projects\vbgrader\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\obj\x86\Release\YangQ_Lab7.FormClassGrid.resources
+C:\Users\brandk\Documents\Projects\vbgrader\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\obj\x86\Release\YangQ_Lab7.FormClassIndividual.resources
+C:\Users\brandk\Documents\Projects\vbgrader\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\obj\x86\Release\YangQ_Lab7.Resources.resources
+C:\Users\brandk\Documents\Projects\vbgrader\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\obj\x86\Release\YangQ_Lab7.vbproj.GenerateResource.Cache
+C:\Users\brandk\Documents\Projects\vbgrader\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\obj\x86\Release\YangQ_Lab7.exe
+C:\Users\brandk\Documents\Projects\vbgrader\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\obj\x86\Release\YangQ_Lab7.xml
+C:\Users\brandk\Documents\Projects\vbgrader\Resources\Lab7\YangQ_Lab7\YangQ_Lab7\obj\x86\Release\YangQ_Lab7.pdb

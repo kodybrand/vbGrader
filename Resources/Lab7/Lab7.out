@@ -1,5 +1,5 @@
 ---------- 8 Points out of 10 Points ---------
----------- 3 Errors out of 22 Tests ----------
+---------- 6 Errors out of 42 Tests ----------
 
 Error in Component: grdSalesStaff
                  Property: Width
@@ -16,3 +16,15 @@ Error in Component: FormClassIndividual
                Expected: 590
               But Found: 576
 
+Error in Component: txtPosition
+          Property: Text
+    Should Contain: 1
+         But Found: 
+Error in Component: txtPosition
+          Property: Text
+    Should Contain: 2
+         But Found: 
+Error in Component: txtPosition
+          Property: Text
+    Should Contain: 1
+         But Found: 

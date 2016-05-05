@@ -62,6 +62,9 @@ Public Class ScriptCommands
 
       ElseIf temp Like ("Lab7 * *") Then
 
+      ElseIf temp Like ("Test 3 * *") Then
+
+
       Else
          If Not temp = expectedValue Then
             Dim tempString As String = "Error in Component: " & componentName & vbCrLf _

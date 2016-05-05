@@ -1081,6 +1081,7 @@ Public Class AssemblyImage
 
    ' Loads all the forms in the assembly and adds them to a container.
    Public Sub loadForms()
+      System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = False
 
       For Each ty As Type In testAssembly.GetTypes()
          If ty.BaseType.Name = "Form" Then
