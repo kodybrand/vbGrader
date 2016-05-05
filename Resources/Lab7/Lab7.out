@@ -1,5 +1,5 @@
 ---------- 8 Points out of 10 Points ---------
----------- 6 Errors out of 42 Tests ----------
+---------- 9 Errors out of 45 Tests ----------
 
 Error in Component: grdSalesStaff
                  Property: Width
@@ -27,4 +27,16 @@ Error in Component: txtPosition
 Error in Component: txtPosition
           Property: Text
     Should Contain: 1
+         But Found: 
+Error in Component: lblCount
+          Property: Text
+    Should Contain: of 20
+         But Found: 
+Error in Component: lblCount
+          Property: Text
+    Should Contain: of 21
+         But Found: 
+Error in Component: lblCount
+          Property: Text
+    Should Contain: of 2
          But Found: 

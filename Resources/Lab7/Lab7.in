@@ -85,7 +85,7 @@ Form FormClassIndividual
 	
 	' Checking Remove 
 		clickToolStrip btnDelete
-		contains lblCount Text "of 2" 0.5
+		contains lblCount Text "of 20" 0.5
 		
 	
 		
