@@ -1,0 +1,8 @@
+Issues 
+
+- Unable to access the properties of Entry point to determine that Startup Object. This is due to System.Reflection being a Friend.
+- We are unable pull Text from Textboxes that are binded to the datasource. This is due to threading issues.
+- We are unable to access Columns in the Datagrid view to see if they are set correctly. Could not grad the properties to determine.
+
+Ask :
+- Issues with grabbing the H & W 
